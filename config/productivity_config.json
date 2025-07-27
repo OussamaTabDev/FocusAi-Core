@@ -1,0 +1,81 @@
+{
+  "rules": {
+    "Productive": [
+      "vscode",
+      "github",
+      "notion",
+      "stackoverflow",
+      "docs.google",
+      "coursera",
+      "wikipedia",
+      "khan",
+      "udemy",
+      "linkedin",
+      "medium",
+      "dev.to"
+    ],
+    "Distracting": [
+      "youtube",
+      "tiktok",
+      "instagram",
+      "netflix",
+      "facebook",
+      "twitter",
+      "reddit",
+      "twitch",
+      "discord",
+      "snapchat"
+    ],
+    "Blocked": [
+      "malicioussite",
+      "piratedcontent",
+      "adultcontent",
+      "gambling",
+      "phishing"
+    ],
+    "Neutral": [
+      "weather",
+      "calculator",
+      "calendar",
+      "settings",
+      "system",
+      "control panel",
+      "task manager",
+      "file explorer",
+      "notepad",
+      "clock",
+      "brave"
+    ]
+  },
+  "ai_cache": {
+    "visual studio code": "Productive",
+    "google cloud": "Neutral",
+    "google aistudio": "Productive",
+    "deepseek": "Productive",
+    "claude": "Productive",
+    "chatgpt": "Productive",
+    "vlc media player": "Distracting",
+    "mods and community": "Distracting",
+    "vortex": "Distracting",
+    "nexusmods": "Distracting",
+    "xxnx": "Blocked",
+    "sedodna": "Productive",
+    "goldfishouncereburial": "Distracting",
+    "stripchat": "Blocked",
+    "affine": "Blocked",
+    "xnxx": "Blocked",
+    "melbet-ma": "Blocked",
+    "blogspot": "Distracting",
+    "linuxjourney": "Productive",
+    "kimi": "Productive",
+    "dpuplet": "Productive",
+    "mediaoptions": "Distracting",
+    "lovable": "Distracting",
+    "google gemini": "Productive",
+    "pornhub": "Blocked",
+    "whatsapp": "Distracting",
+    "v1.0": "Productive",
+    "terminal": "Neutral"
+  },
+  "user_overrides": {}
+}

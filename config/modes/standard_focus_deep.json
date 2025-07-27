@@ -1,0 +1,35 @@
+{
+  "mode_type": "STANDARD",
+  "submode": "FOCUS",
+  "focus_type": "DEEP",
+  "description": "Deep focus mode for intensive work",
+  "settings": {
+    "allowed_apps": [
+      "visual studio code",
+      "notion",
+      "slack",
+      "figma",
+      "obsidian",
+      "microsoft teams",
+      "trello"
+    ],
+    "blocked_apps": [
+      "discord",
+      "steam",
+      "spotify",
+      "facebook",
+      "reddit",
+      "twitter",
+      "whatsapp"
+    ],
+    "minimized_apps": [
+      "vlc",
+      "youtube"
+    ],
+    "duration": 45,
+    "notifications_enabled": false,
+    "auto_break_reminder": true,
+    "break_interval_minutes": 25,
+    "distraction_blocker": true
+  }
+}

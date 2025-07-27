@@ -1,0 +1,27 @@
+{
+  "mode_type": "STANDARD",
+  "submode": "FOCUS",
+  "focus_type": "LIGHT",
+  "description": "Light focus mode for general productivity",
+  "settings": {
+    "allowed_apps": [
+      "visual studio code",
+      "notion",
+      "slack",
+      "spotify"
+    ],
+    "blocked_apps": [
+      "discord",
+      "steam",
+      "facebook",
+      "reddit"
+    ],
+    "minimized_apps": [
+      "youtube"
+    ],
+    "duration": 30,
+    "notifications_enabled": true,
+    "auto_break_reminder": false,
+    "distraction_blocker": false
+  }
+}

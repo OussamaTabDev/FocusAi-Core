@@ -1,0 +1,12 @@
+{
+  "mode_type": "STANDARD",
+  "submode": "NORMAL",
+  "description": "Normal usage with no restrictions",
+  "settings": {
+    "allowed_apps": [],
+    "blocked_apps": [],
+    "minimized_apps": [],
+    "notifications_enabled": true,
+    "auto_break_reminder": false
+  }
+}

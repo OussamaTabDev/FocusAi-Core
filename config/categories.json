@@ -1,0 +1,46 @@
+{
+    "system_dialog": [
+        "properties",
+        "settings",
+        "control panel",
+        "options"
+    ],
+    "file_manager": [
+        "explorer",
+        "finder",
+        "nautilus",
+        "dolphin"
+    ],
+    "terminal": [
+        "terminal",
+        "cmd",
+        "powershell",
+        "bash",
+        "konsole"
+    ],
+    "browser": [
+        "chrome",
+        "firefox",
+        "edge",
+        "brave"
+    ],
+    "code_editor": [
+        "visual studio code",
+        "pycharm",
+        "sublime",
+        "atom",
+        "vim",
+        "devenv"
+    ],
+    "media_player": [
+        "vlc",
+        "potplayer"
+    ],
+    "entertainment": [
+        "steam",
+        "epic games",
+        "gog galaxy",
+        "youtube",
+        "netflix"
+    ]
+}

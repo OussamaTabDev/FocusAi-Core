@@ -1,0 +1,29 @@
+{
+  "mode_type": "KIDS",
+  "description": "Educational mode for learning activities",
+  "settings": {
+    "allowed_apps": [
+      "scratch",
+      "khan academy",
+      "minecraft education",
+      "duolingo",
+      "prodigy math"
+    ],
+    "blocked_apps": [
+      "discord",
+      "steam",
+      "facebook",
+      "reddit"
+    ],
+    "minimized_apps": [
+      "youtube"
+    ],
+    "duration": 0.2,
+    "bedtime_start": "21:00",
+    "bedtime_end": "07:00",
+    "parental_override_required": false,
+    "screen_time_alerts": true,
+    "educational_time_bonus": true,
+    "achievement_tracking": true
+  }
+}

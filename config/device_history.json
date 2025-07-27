@@ -1,0 +1,12 @@
+{
+  "2025-07-22": {
+    "action": "sleep",
+    "timestamp": "2025-07-22T16:10:55.412006",
+    "requires_passcode": false
+  },
+  "2025-07-24": {
+    "action": "sleep",
+    "timestamp": "2025-07-24T13:04:15.534140",
+    "requires_passcode": false
+  }
+}

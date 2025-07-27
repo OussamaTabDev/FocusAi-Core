@@ -1,0 +1,79 @@
+[
+  {
+    "date": "2025-07-23T15:14:34.505867",
+    "focus_type": "DEEP",
+    "duration": "0:00:05.013905",
+    "productivity_score": 80,
+    "streak": 0
+  },
+  {
+    "date": "2025-07-23T15:16:27.326802",
+    "focus_type": "DEEP",
+    "duration": "0:00:05.008841",
+    "productivity_score": 80,
+    "streak": 0
+  },
+  {
+    "date": "2025-07-23T15:16:53.194778",
+    "focus_type": "DEEP",
+    "duration": "0:00:05.008458",
+    "productivity_score": 80,
+    "streak": 0
+  },
+  {
+    "date": "2025-07-23T15:18:30.359928",
+    "focus_type": "DEEP",
+    "duration": "0:00:32.507676",
+    "productivity_score": 80,
+    "streak": 0
+  },
+  {
+    "date": "2025-07-23T15:21:51.946336",
+    "focus_type": "DEEP",
+    "duration": "0:00:33.703014",
+    "productivity_score": 80,
+    "streak": 0
+  },
+  {
+    "date": "2025-07-23T15:28:57.574934",
+    "focus_type": "DEEP",
+    "duration": "0:00:05.001677",
+    "productivity_score": 0,
+    "streak": 0
+  },
+  {
+    "date": "2025-07-23T15:31:40.101948",
+    "focus_type": "DEEP",
+    "duration": "0:00:00.002043",
+    "productivity_score": 0,
+    "streak": 0
+  },
+  {
+    "date": "2025-07-23T15:31:45.117869",
+    "focus_type": "LIGHT",
+    "duration": "0:00:05.011733",
+    "productivity_score": 0,
+    "streak": 0
+  },
+  {
+    "date": "2025-07-23T15:31:50.129366",
+    "focus_type": "DEEP",
+    "duration": "0:00:05.009363",
+    "productivity_score": 0,
+    "streak": 0
+  },
+  {
+    "date": "2025-07-23T15:36:42.628725",
+    "focus_type": "DEEP",
+    "duration": "0:00:02.093916",
+    "productivity_score": 0,
+    "streak": 0
+  },
+  {
+    "date": "2025-07-23T15:39:17.404732",
+    "focus_type": "DEEP",
+    "duration": "0:01:00.529050",
+    "productivity_score": 0,
+    "streak": 0
+  }
+]
