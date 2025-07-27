@@ -75,7 +75,9 @@
     "pornhub": "Blocked",
     "whatsapp": "Distracting",
     "v1.0": "Productive",
-    "terminal": "Neutral"
+    "terminal": "Neutral",
+    "cloudskillsboost": "Neutral",
+    "google mail": "Neutral"
   },
   "user_overrides": {}
 }

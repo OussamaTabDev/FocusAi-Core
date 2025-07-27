@@ -17,6 +17,7 @@ import utils
 from category_classifier import CategoryClassifier
 from parser import WindowTitleParser
 
+from analytics import SessionAnalytics
 from layers.window_history import WindowHistory
 from layers.Image_capturer import ImageCapturer
 # from layers.browser_controller import BrowserController
@@ -31,6 +32,7 @@ class WindowTracker:
         
         # New intelligent history manager
         self.history = WindowHistory(self , session_gap_seconds=session_gap_seconds , Mode_Controller=ModeController())
+        self.analytics = SessionAnalytics(self.history)
         # New image capturer
         self.capturer = ImageCapturer(interval=self.interval)
         # New mode controller

@@ -1,4 +1,4 @@
-# classifier.py
+# category_classifier.py
 import re
 # Import the loaded categories from our new config manager
 from config_manager import CATEGORIES
