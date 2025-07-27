@@ -12,7 +12,7 @@ import webbrowser
 # Import your existing classes
 from models import WindowInfo
 from .window_controller import ControlResult, WindowController
-import server
+import extension_tracker as server
 # Import your existing classes
 from models import WindowInfo
 from .window_controller import ControlResult, WindowController
@@ -20,7 +20,7 @@ from config_manager import URLS
 
 
 # server
-import server # server.py
+import extension_tracker # server.py
 
 class TabAction(Enum):
     """Available tab actions"""
