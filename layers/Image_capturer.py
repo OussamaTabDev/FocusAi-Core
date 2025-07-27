@@ -11,7 +11,7 @@ class ImageCapturer:
         self.screenshot = None
         self.capture_time = None
         self.image_history = []
-        self.interval = interval
+        self.interval = interval * 60
         self.is_capturing = False
         self.lock = threading.Lock()
         self.base_folder = "screenshots"  # Base folder for all screenshots
