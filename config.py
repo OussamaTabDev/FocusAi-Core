@@ -13,7 +13,7 @@ CONFIG_FILE = 'config/process_map.json'
 DATA_FILE = 'config/url_history.json'
 
 #Api keys
-apikey = 'AIzaSyDJOnM3f2pA2-AXtmOAF-xFPgl-mJqSYpg'
+apikey = ''
 
 # pass-code
 HISTORY_FILE = os.path.join(os.path.dirname(__file__), "config/device_history.json")
