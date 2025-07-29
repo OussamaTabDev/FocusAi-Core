@@ -89,7 +89,7 @@ class ProductivityTracker:
         if cached:
             return cached
 
-        # print(f"ai_provider: {self.ai_provider}")
+        print(f"ai_provider: {self.ai_provider}")
         # 4. AI fallback
         if self.ai_provider:
             ai_response = self.ai_provider.classify(resource_name)

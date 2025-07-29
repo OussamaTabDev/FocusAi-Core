@@ -10,6 +10,13 @@ from config_manager import (
     add_pattern_to_category,
     remove_pattern_from_category
 )
+import os
+# from Providers.provider_singleton import save_provider, ProviderType
+
+# -----------------------------------------------
+# 1️⃣  Hard-code the API key once – it persists
+# -----------------------------------------------
+
 
 def category_management_demo():
     """Demonstrates the CRUD functionality for categories."""

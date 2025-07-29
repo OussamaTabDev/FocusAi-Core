@@ -62,7 +62,6 @@
     "sedodna": "Productive",
     "goldfishouncereburial": "Distracting",
     "stripchat": "Blocked",
-    "affine": "Blocked",
     "xnxx": "Blocked",
     "melbet-ma": "Blocked",
     "blogspot": "Distracting",
@@ -77,7 +76,8 @@
     "v1.0": "Productive",
     "terminal": "Neutral",
     "cloudskillsboost": "Neutral",
-    "google mail": "Neutral"
+    "google mail": "Neutral",
+    "affine": "Productive"
   },
   "user_overrides": {}
 }
