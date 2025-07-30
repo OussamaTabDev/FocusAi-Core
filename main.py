@@ -133,19 +133,19 @@ def main():
     
     try:
         # Initial wait to capture some activity
-        time.sleep(2)
+        # time.sleep(2)
         
         # Demo mode switching
         # mode_controller.switch_to_focus(FocusType.LIGHT)
-        time.sleep(5)
+        # time.sleep(5)
         
         # mode_controller.change_focus_type(FocusType.DEEP)
-        time.sleep(5)
+        # time.sleep(5)
         
         # mode_controller.switch_to_standard_normal()
-        time.sleep(5)
+        # time.sleep(5)
         
-        # mode_controller.switch_to_kids_mode()
+        mode_controller.switch_to_kids_mode()
         time.sleep(5)
         
         # mode_controller.switch_to_standard_normal()
