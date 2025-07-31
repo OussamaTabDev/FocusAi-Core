@@ -189,8 +189,10 @@ class ModeController:
         
         if app_name in settings.blocked_apps:
             should_block = True
-        elif hasattr(settings, 'allowed_apps') and settings.allowed_apps and app_name not in settings.allowed_apps and app_name not in settings.minimized_apps:
-            should_block = True
+        # elif hasattr(settings, 'allowed_apps') and settings.allowed_apps and app_name not in settings.allowed_apps and app_name not in settings.minimized_apps and  :
+        #     should_block = True
+        else:
+            should_block = False
             
         if should_block:
             if window_info.window_type == "browser":

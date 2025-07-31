@@ -1,7 +1,7 @@
 # models.py
 from dataclasses import dataclass, field
-from typing import Dict, Optional, Tuple
-
+from typing import Dict, Optional, Tuple , List
+from datetime import datetime
 @dataclass
 class WindowInfo:
     """A data class to hold all information about a single window state."""
@@ -38,7 +38,47 @@ class WindowInfo:
     # A field to hold any extra OS-specific data we might want
     extra_info: Dict = field(default_factory=dict)
     
+
+@dataclass
+class AppSession:
+    """Represents a continuous session of app usage."""
+    app_name: str
+    start_time: datetime
+    end_time: Optional[datetime] = None
+    total_duration: float = 0.0  # in seconds
+    context_changes: List[str] = field(default_factory=list)
+    titles_seen: List[str] = field(default_factory=list)
+    status_changes: List[Tuple[str, str]] = field(default_factory=list)  # (timestamp, status)
+    window_count: int = 0
+    session_id: Optional[int] = None  # Database ID
     
+    @property
+    def duration_minutes(self) -> float:
+        """Return duration in minutes."""
+        return self.total_duration / 60.0
+    
+    @property
+    def is_active(self) -> bool:
+        """Check if this session is still active."""
+        return self.end_time is None
+
+@dataclass
+class AppStatistics:
+    """Statistics for a specific app."""
+    app_name: str
+    total_time: float = 0.0  # in seconds
+    session_count: int = 0
+    contexts: Dict[str, float] = field(default_factory=dict)  # context -> time spent
+    statuses: Dict[str, float] = field(default_factory=dict)  # status -> time spent
+    average_session_duration: float = 0.0
+    longest_session: float = 0.0
+    last_used: Optional[datetime] = None
+    
+    def update_averages(self):
+        """Update calculated fields."""
+        if self.session_count > 0:
+            self.average_session_duration = self.total_time / self.session_count
+   
 # @dataclass
 # class TabInfo:
 #     """Enhanced tab information from browser extension"""

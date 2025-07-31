@@ -30,31 +30,34 @@ from Providers.InitAIProvider import AIProviderManager , ProviderType
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 class WindowTracker:
-    def __init__(self, interval: int = 1, session_gap_seconds: int = 30):
+    def __init__(self, interval: int = 1, session_gap_seconds: int = 30 ,
+                database_url: str = None):
         self.interval = interval
         self.is_tracking = False
         
+        # Initialize database URL
+        if database_url is None:
+            from database.config import DatabaseConfig
+            database_url = DatabaseConfig.get_database_url()
+            
         # New intelligent history manager
         self.mode_controller = ModeController()
-        self.history = WindowHistory(self , session_gap_seconds=session_gap_seconds , Mode_Controller=self.mode_controller)
+        self.history = WindowHistory(self , session_gap_seconds=session_gap_seconds , Mode_Controller=self.mode_controller , database_url= database_url)
         self.analytics = SessionAnalytics(self.history)
+        
         # New image capturer
         self.capturer = ImageCapturer(interval=self.interval)
-        # New mode controller
-        # self.mode_controller = ModeController(self)
-        # Threading handler
         self.lock = threading.Lock()
+        
         # Providers
         self.provider = AIProviderManager()
-        # self.provider_mgr =           # always returns the same instance
-        # if self.provider_mgr.get_default_provider() is None:
-        #     # first run – ask user or read from env
-        #     save_provider(ProviderType.GEMINI, os.getenv("GEMINI_API_KEY"))
-        #     self.provider_mgr = get_provider()
+        
+        
         if self.provider.load_provider():
             self.ai_provider = self.provider.create_ai_provider(self.provider.load_provider()[0],self.provider.load_provider()[1])
         else:
             self.ai_provider = None
+            
         # Composition: The tracker USES these helpers, but doesn't implement them.
         self.cat_classifier = CategoryClassifier()
         self.title_parser = WindowTitleParser(self.cat_classifier)
@@ -190,6 +193,12 @@ class WindowTracker:
             logging.error(f"Error detecting active window: {e}")
             return None
 
+    def get_current_window(self) -> Optional[WindowInfo]:
+        """Get the currently active window info"""
+        # print("Getting current window info... **********************************************")
+        # print(f"This is the current window info: {self._get_active_window_info()} **********************************************")
+        return self._get_active_window_info()
+    
     def _track_loop(self):
         """The internal loop that runs on a separate thread."""
         logging.info("Window tracking started.")
@@ -198,6 +207,7 @@ class WindowTracker:
             window_info = self._get_active_window_info()
 
             if window_info:
+                # print(f"Active Window: {window_info} ")  
                 # Add to intelligent history manager
                 self.history.add_window_info(window_info)
                 # Optional: Log current app for debugging
@@ -237,9 +247,7 @@ class WindowTracker:
         with self.lock:
             return list(self.focus_history) if hasattr(self, 'focus_history') else []
     
-    def get_current_window(self) -> Optional[WindowInfo]:
-        """Get the currently active window info"""
-        return self._get_active_window_info()
+    
     
     def quick_restart(self) -> None:
         """
@@ -389,3 +397,28 @@ class WindowTracker:
             },
             'provider_info': self.provider.load_provider() if self.provider.load_provider() else None
         }
+        
+    def _setup_database(self, database_url: str):
+        """Set up database if needed."""
+        try:
+            from database.migrations import DatabaseMigration
+            migration = DatabaseMigration(database_url)
+            migration.initialize_database()
+            logging.info("Database initialized successfully")
+        except Exception as e:
+            logging.error(f"Error setting up database: {e}")
+            # Continue without database - will fallback to memory only
+    
+    # Add this method to your existing tracker class
+    def create_backup(self) -> Optional[str]:
+        """Create a backup of the tracking data."""
+        try:
+            from database.backup import DatabaseBackup
+            from database.config import DatabaseConfig
+            
+            database_url = DatabaseConfig.get_database_url()
+            backup = DatabaseBackup(database_url)
+            return backup.create_backup()
+        except Exception as e:
+            logging.error(f"Error creating backup: {e}")
+            return None

@@ -84,7 +84,8 @@ class SettingsManager:
                 "notifications_enabled": False,
                 "auto_break_reminder": True,
                 "break_interval_minutes": 25,
-                "distraction_blocker": True
+                "distraction_blocker": True,
+                "strict_mode": True
             }
         }
     
@@ -102,6 +103,7 @@ class SettingsManager:
                 "duration": 30,
                 "notifications_enabled": True,
                 "auto_break_reminder": False,
+                "strict_mode": False
             }
         }
     
@@ -239,7 +241,14 @@ class SettingsManager:
       
     def list_available_modes(self) -> List[str]:
         """Get list of available mode keys"""
+        print(f"Available modes: {self.mode_settings.keys()}")
         return list(self.mode_settings.keys())
+    
+    def list_available_Focus_modes(self) -> List[str]:
+        """Get list of available  focus mode keys"""
+        focus_modes = [mode for mode in self.mode_settings.keys() if 'focus' in mode]
+        print(f"Focus modes: {focus_modes}")
+        return focus_modes
     
     def update_mode_setting(self, mode_key: str, setting_name: str, new_value: Any) -> None:
         """

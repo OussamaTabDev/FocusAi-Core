@@ -10,6 +10,7 @@ class ModeSettings:
         self.blocked_apps: List[str] = []
         self.minimized_apps: List[str] = []
         self.duration: Optional[timedelta] = None
+        self.strict_mode: bool = False
         self.notifications_enabled: bool = True
         self.notification_intensity: str = "normal"  # "gentle", "normal", "strong"
         self.screen_time_limit: Optional[timedelta] = None

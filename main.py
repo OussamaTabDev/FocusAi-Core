@@ -145,7 +145,7 @@ def main():
         # mode_controller.switch_to_standard_normal()
         # time.sleep(5)
         
-        mode_controller.switch_to_kids_mode()
+        # mode_controller.switch_to_kids_mode()
         time.sleep(5)
         
         # mode_controller.switch_to_standard_normal()
@@ -156,7 +156,7 @@ def main():
     except KeyboardInterrupt:
         print("\nStopping tracker...")
     finally:
-        tracker.stop()
+        tracker.force_stop()
         
         # Display analytics after stopping
         display_analytics(tracker)
