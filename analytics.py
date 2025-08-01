@@ -318,3 +318,6 @@ class SessionAnalytics:
             })
 
         return monthly_summaries
+    
+    def get_today_statistics(self):
+        return self.window_history.get_today_statistics()

@@ -712,3 +712,6 @@ class WindowHistory:
         except Exception as e:
             logging.error(f"Error getting database info: {e}")
             return {'error': str(e)}
+    
+    def get_today_statistics(self):
+        return self.db_manager.get_today_statistics()

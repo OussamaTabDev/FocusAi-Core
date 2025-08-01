@@ -106,9 +106,10 @@ class DatabaseManager:
         """Save or update app statistics"""
         with self.get_session() as db_session:
             try:
-                db_stats = db_session.query(AppStatisticsDB).filter_by(app_name=stats.app_name).first()
+                db_stats = db_session.query(AppStatisticsDB).filter_by(
+                    app_name=stats.app_name).first()
                 if db_stats:
-                    # Update existing
+                    # update existing row
                     db_stats.total_time = stats.total_time
                     db_stats.session_count = stats.session_count
                     db_stats.average_session_duration = stats.average_session_duration
@@ -117,11 +118,11 @@ class DatabaseManager:
                     db_stats.contexts = stats.contexts
                     db_stats.statuses = stats.statuses
                 else:
-                    # Create new
+                    # NEW row: stamp with today’s calendar day
                     db_stats = AppStatisticsDB(
                         app_name=stats.app_name,
+                        day_use=datetime.today().date(),  # <-- HERE
                         total_time=stats.total_time,
-                        day_use = datetime.today().date(),
                         session_count=stats.session_count,
                         average_session_duration=stats.average_session_duration,
                         longest_session=stats.longest_session,
@@ -327,6 +328,7 @@ class DatabaseManager:
             stats = AppStatisticsDB(
                 app_name=app_name,
                 total_time=total_time,
+                day_use=datetime.today().date(),
                 session_count=session_count,
                 average_session_duration=avg_duration,
                 longest_session=longest_session,
@@ -335,3 +337,25 @@ class DatabaseManager:
                 statuses={}
             )
             db_session.add(stats)
+    
+    def get_today_statistics(self) -> Dict[str, AppStatistics]:
+        """Return per-app usage for the current calendar day."""
+        today = datetime.today().date()
+        with self.get_session() as db_session:
+            rows = db_session.query(AppStatisticsDB).filter(
+                func.date(AppStatisticsDB.day_use) == today
+            ).all()
+
+            return {
+                row.app_name: AppStatistics(
+                    app_name=row.app_name,
+                    total_time=row.total_time,
+                    session_count=row.session_count,
+                    contexts=row.contexts or {},
+                    statuses=row.statuses or {},
+                    average_session_duration=row.average_session_duration,
+                    longest_session=row.longest_session,
+                    last_used=row.last_used
+                )
+                for row in rows
+            }
