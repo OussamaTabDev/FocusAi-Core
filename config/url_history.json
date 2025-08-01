@@ -1,590 +1,1556 @@
 [
   {
-    "url": "https://claude.ai/new",
-    "title": "Claude",
-    "timestamp": "2025-07-23T16:51:06.621Z",
-    "server_timestamp": "2025-07-23T17:51:06.933125",
-    "domain": "claude.ai"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=14r03AFSuY0",
-    "title": "(24) فجرية رائعة من سورة الأنبياء, للشيخ رعد الكردي | بدولة الكويت🇰🇼 - YouTube",
-    "timestamp": "2025-07-23T16:51:06.893Z",
-    "server_timestamp": "2025-07-23T17:51:07.186178",
-    "domain": "youtube.com"
-  },
-  {
-    "url": "https://mail.google.com/mail/u/0/#inbox",
-    "title": "Inbox (3,813) - oussamatabzioui09@gmail.com - Gmail",
-    "timestamp": "2025-07-23T16:51:07.529Z",
-    "server_timestamp": "2025-07-23T17:51:07.542465",
-    "domain": "mail.google.com"
-  },
-  {
-    "url": "https://claude.ai/new",
-    "title": "Claude",
-    "timestamp": "2025-07-23T16:51:08.149Z",
-    "server_timestamp": "2025-07-23T17:51:08.343899",
-    "domain": "claude.ai"
-  },
-  {
-    "url": "https://chat.deepseek.com/a/chat/s/b1be76b7-f5de-436f-97e3-5bc151b6c342",
-    "title": "Debugging Mode Enforcement Issue in Python - DeepSeek",
-    "timestamp": "2025-07-23T16:51:08.658Z",
-    "server_timestamp": "2025-07-23T17:51:08.996720",
-    "domain": "chat.deepseek.com"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=14r03AFSuY0",
-    "title": "(24) فجرية رائعة من سورة الأنبياء, للشيخ رعد الكردي | بدولة الكويت🇰🇼 - YouTube",
-    "timestamp": "2025-07-23T16:51:09.379Z",
-    "server_timestamp": "2025-07-23T17:51:09.718598",
-    "domain": "youtube.com"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=4uRrdUO0l3I",
-    "title": "(31) الشيخ رعد الكردي, سورة هود - ليلة 10 رمضان 1443 - YouTube",
-    "timestamp": "2025-07-24T10:51:30.016Z",
-    "server_timestamp": "2025-07-24T11:51:30.324901",
-    "domain": "youtube.com"
-  },
-  {
-    "url": "https://www.youtube.com/results?search_query=You+are+out+of+free+messages+until+4%3A00+PM+",
-    "title": "(31) الشيخ رعد الكردي, سورة هود - ليلة 10 رمضان 1443 - YouTube",
-    "timestamp": "2025-07-24T10:51:36.072Z",
-    "server_timestamp": "2025-07-24T11:51:36.416131",
-    "domain": "youtube.com"
-  },
-  {
-    "url": "https://www.youtube.com/results?search_query=You+are+out+of+free+messages+until+%2C+claude+bypass",
-    "title": "(31) You are out of free messages until 4:00 PM - YouTube",
-    "timestamp": "2025-07-24T10:52:15.090Z",
-    "server_timestamp": "2025-07-24T11:52:15.094542",
-    "domain": "youtube.com"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=QXfmzVWMkaM",
-    "title": "(31) You are out of free messages until , claude bypass - YouTube",
-    "timestamp": "2025-07-24T10:52:22.363Z",
-    "server_timestamp": "2025-07-24T11:52:22.665555",
-    "domain": "youtube.com"
-  },
-  {
-    "url": "https://www.youtube.com/results?search_query=You+are+out+of+free+messages+until+%2C+claude+bypass",
-    "title": "(31) You are out of free messages until , claude bypass - YouTube",
-    "timestamp": "2025-07-24T11:07:25.419Z",
-    "server_timestamp": "2025-07-24T12:07:25.748885",
-    "domain": "youtube.com"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=-w53i6Ae-YM",
-    "title": "(31) You are out of free messages until , claude bypass - YouTube",
-    "timestamp": "2025-07-24T11:07:32.813Z",
-    "server_timestamp": "2025-07-24T12:07:32.835409",
-    "domain": "youtube.com"
-  },
-  {
-    "url": "https://claude.ai/chat/16f679ec-f320-4b2c-96f6-61d8edc6357d",
-    "title": "Kids Mode Sleep Action Bug - Claude",
-    "timestamp": "2025-07-24T11:08:50.978Z",
-    "server_timestamp": "2025-07-24T12:08:51.289813",
-    "domain": "claude.ai"
-  },
-  {
-    "url": "chrome://newtab/",
-    "title": "New Tab",
-    "timestamp": "2025-07-24T11:09:35.914Z",
-    "server_timestamp": "2025-07-24T12:09:35.918908",
-    "domain": "newtab"
-  },
-  {
-    "url": "https://claude.ai/chat/16f679ec-f320-4b2c-96f6-61d8edc6357d",
-    "title": "Kids Mode Sleep Action Bug - Claude",
-    "timestamp": "2025-07-24T11:09:38.671Z",
-    "server_timestamp": "2025-07-24T12:09:39.019271",
-    "domain": "claude.ai"
-  },
-  {
-    "url": "chrome://newtab/",
-    "title": "New Tab",
-    "timestamp": "2025-07-24T11:09:40.838Z",
-    "server_timestamp": "2025-07-24T12:09:41.172697",
-    "domain": "newtab"
-  },
-  {
-    "url": "https://claude.ai/chat/16f679ec-f320-4b2c-96f6-61d8edc6357d",
-    "title": "Kids Mode Sleep Action Bug - Claude",
-    "timestamp": "2025-07-24T11:09:51.097Z",
-    "server_timestamp": "2025-07-24T12:09:51.419077",
-    "domain": "claude.ai"
-  },
-  {
-    "url": "https://chat.deepseek.com/",
-    "title": "DeepSeek",
-    "timestamp": "2025-07-24T11:10:22.837Z",
-    "server_timestamp": "2025-07-24T12:10:23.150118",
-    "domain": "chat.deepseek.com"
-  },
-  {
-    "url": "http://127.0.0.1:5500/layers/electron_panel/passcode.html",
-    "title": "Access Restricted",
-    "timestamp": "2025-07-24T11:13:26.775Z",
-    "server_timestamp": "2025-07-24T12:13:27.096570",
-    "domain": "127.0.0.1:5500"
-  },
-  {
-    "url": "https://chat.deepseek.com/",
-    "title": "DeepSeek",
-    "timestamp": "2025-07-24T11:13:39.650Z",
-    "server_timestamp": "2025-07-24T12:13:39.674670",
-    "domain": "chat.deepseek.com"
-  },
-  {
-    "url": "https://claude.ai/chat/16f679ec-f320-4b2c-96f6-61d8edc6357d",
-    "title": "Kids Mode Sleep Action Bug - Claude",
-    "timestamp": "2025-07-24T11:14:03.706Z",
-    "server_timestamp": "2025-07-24T12:14:04.083837",
-    "domain": "claude.ai"
-  },
-  {
-    "url": "https://chat.deepseek.com/",
-    "title": "DeepSeek - Into the Unknown",
-    "timestamp": "2025-07-24T11:14:10.167Z",
-    "server_timestamp": "2025-07-24T12:14:10.230637",
-    "domain": "chat.deepseek.com"
-  },
-  {
-    "url": "https://claude.ai/chat/16f679ec-f320-4b2c-96f6-61d8edc6357d",
-    "title": "Kids Mode Sleep Action Bug - Claude",
-    "timestamp": "2025-07-24T11:14:11.314Z",
-    "server_timestamp": "2025-07-24T12:14:11.642811",
-    "domain": "claude.ai"
-  },
-  {
-    "url": "https://chat.deepseek.com/",
-    "title": "DeepSeek - Into the Unknown",
-    "timestamp": "2025-07-24T11:14:13.376Z",
-    "server_timestamp": "2025-07-24T12:14:13.732978",
-    "domain": "chat.deepseek.com"
-  },
-  {
-    "url": "https://claude.ai/chat/16f679ec-f320-4b2c-96f6-61d8edc6357d",
-    "title": "Kids Mode Sleep Action Bug - Claude",
-    "timestamp": "2025-07-24T11:14:18.865Z",
-    "server_timestamp": "2025-07-24T12:14:19.193647",
-    "domain": "claude.ai"
-  },
-  {
-    "url": "https://chat.deepseek.com/",
-    "title": "DeepSeek - Into the Unknown",
-    "timestamp": "2025-07-24T11:14:21.831Z",
-    "server_timestamp": "2025-07-24T12:14:22.153172",
-    "domain": "chat.deepseek.com"
-  },
-  {
-    "url": "https://claude.ai/chat/16f679ec-f320-4b2c-96f6-61d8edc6357d",
-    "title": "Kids Mode Sleep Action Bug - Claude",
-    "timestamp": "2025-07-24T11:14:25.597Z",
-    "server_timestamp": "2025-07-24T12:14:25.937688",
-    "domain": "claude.ai"
-  },
-  {
-    "url": "https://chat.deepseek.com/",
-    "title": "DeepSeek - Into the Unknown",
-    "timestamp": "2025-07-24T11:14:28.880Z",
-    "server_timestamp": "2025-07-24T12:14:29.204308",
-    "domain": "chat.deepseek.com"
-  },
-  {
-    "url": "https://claude.ai/chat/16f679ec-f320-4b2c-96f6-61d8edc6357d",
-    "title": "Kids Mode Sleep Action Bug - Claude",
-    "timestamp": "2025-07-24T11:14:37.167Z",
-    "server_timestamp": "2025-07-24T12:14:37.235054",
-    "domain": "claude.ai"
-  },
-  {
-    "url": "https://chat.deepseek.com/",
-    "title": "DeepSeek - Into the Unknown",
-    "timestamp": "2025-07-24T11:14:40.287Z",
-    "server_timestamp": "2025-07-24T12:14:40.605425",
-    "domain": "chat.deepseek.com"
-  },
-  {
-    "url": "https://chat.deepseek.com/a/chat/s/d88ed773-5006-42bd-af44-b7fa2b35b982",
-    "title": "DeepSeek - Into the Unknown",
-    "timestamp": "2025-07-24T11:14:50.528Z",
-    "server_timestamp": "2025-07-24T12:14:50.845436",
-    "domain": "chat.deepseek.com"
-  },
-  {
-    "url": "chrome://newtab/",
-    "title": "New Tab",
-    "timestamp": "2025-07-24T11:16:45.622Z",
-    "server_timestamp": "2025-07-24T12:16:45.929734",
-    "domain": "newtab"
-  },
-  {
-    "url": "https://search.brave.com/search?q=warning+icon&source=desktop",
-    "title": "warning icon - Brave Search",
-    "timestamp": "2025-07-24T11:16:53.342Z",
-    "server_timestamp": "2025-07-24T12:16:53.460526",
-    "domain": "search.brave.com"
-  },
-  {
-    "url": "https://search.brave.com/images?q=warning+icon&context=W3sic3JjIjoiaHR0cHM6Ly9jZG4uaWNvbnNjb3V0LmNvbS9pY29uL3ByZW1pdW0vcG5nLTI1Ni10aHVtYi93YXJuaW5nLTI2NDQ0NzMtMjE5NDU1MC5wbmc_Zj13ZWJwJnc9MTI4IiwidGV4dCI6IkVkdWNhdGlvbiBXYXJuaW5nIE5vdGljZSBJY29uIiwicGFnZV91cmwiOiJodHRwczovL2ljb25zY291dC5jb20vaWNvbnMvd2FybmluZyJ9XQ%3D%3D&sig=e9564cc3bf85f645317835f4ac552988e18000b99ea67469b2007ece26983797&nonce=119ab2401e40f2438b0c85fca37facfd&source=imageCluster",
-    "title": "warning icon - Brave Search",
-    "timestamp": "2025-07-24T11:17:06.315Z",
-    "server_timestamp": "2025-07-24T12:17:06.678128",
-    "domain": "search.brave.com"
-  },
-  {
-    "url": "https://www.photopea.com/?utm_source=homescreen",
-    "title": "Photopea | Online Photo Editor",
-    "timestamp": "2025-07-24T11:17:17.766Z",
-    "server_timestamp": "2025-07-24T12:17:18.077755",
-    "domain": "photopea.com"
-  },
-  {
-    "url": "https://search.brave.com/images?q=warning+png&source=images",
-    "title": "warning png - Brave Search",
-    "timestamp": "2025-07-24T11:17:51.934Z",
-    "server_timestamp": "2025-07-24T12:17:51.947864",
-    "domain": "search.brave.com"
-  },
-  {
-    "url": "https://claude.ai/chat/16f679ec-f320-4b2c-96f6-61d8edc6357d",
-    "title": "Kids Mode Sleep Action Bug - Claude",
-    "timestamp": "2025-07-24T11:23:52.215Z",
-    "server_timestamp": "2025-07-24T12:23:52.527574",
-    "domain": "claude.ai"
-  },
-  {
-    "url": "https://chat.deepseek.com/a/chat/s/d88ed773-5006-42bd-af44-b7fa2b35b982",
-    "title": "Electron Passcode App Build Configuration - DeepSeek",
-    "timestamp": "2025-07-24T11:23:52.775Z",
-    "server_timestamp": "2025-07-24T12:23:52.825478",
-    "domain": "chat.deepseek.com"
-  },
-  {
-    "url": "https://claude.ai/chat/74ab00a3-8b46-498c-88b0-715e673cbfe5",
-    "title": "Code Merge and Conflict Resolution - Claude",
-    "timestamp": "2025-07-26T14:51:02.530Z",
-    "server_timestamp": "2025-07-26T15:51:02.536840",
-    "domain": "claude.ai"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=qQz86bNDZbc",
-    "title": "(43) James Gunn made Superman for everyone - YouTube",
-    "timestamp": "2025-07-26T14:51:02.533Z",
-    "server_timestamp": "2025-07-26T15:51:02.897617",
-    "domain": "youtube.com"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=qQz86bNDZbc",
-    "title": "(43) James Gunn made Superman for everyone - YouTube",
-    "timestamp": "2025-07-26T14:52:45.876Z",
-    "server_timestamp": "2025-07-26T15:52:45.991091",
-    "domain": "youtube.com"
-  },
-  {
-    "url": "https://claude.ai/chat/74ab00a3-8b46-498c-88b0-715e673cbfe5",
-    "title": "Code Merge and Conflict Resolution - Claude",
-    "timestamp": "2025-07-26T14:53:01.465Z",
-    "server_timestamp": "2025-07-26T15:53:01.802264",
-    "domain": "claude.ai"
-  },
-  {
-    "url": "https://www.kimi.com/chat/d22dilmuvalv8lbghjag",
-    "title": "Why Your Blocking System Isn't Working - Kimi",
-    "timestamp": "2025-07-26T14:53:02.251Z",
-    "server_timestamp": "2025-07-26T15:53:02.271402",
-    "domain": "kimi.com"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=qQz86bNDZbc",
-    "title": "(43) James Gunn made Superman for everyone - YouTube",
-    "timestamp": "2025-07-26T14:53:37.622Z",
-    "server_timestamp": "2025-07-26T15:53:37.942035",
-    "domain": "youtube.com"
-  },
-  {
-    "url": "https://www.kimi.com/chat/d22vu7tr1r8hg9otndd0",
-    "title": "Extracting API Keys from Environment Variables - Kimi",
-    "timestamp": "2025-07-27T12:19:19.358Z",
-    "server_timestamp": "2025-07-27T13:19:19.668437",
-    "domain": "kimi.com"
-  },
-  {
-    "url": "https://claude.ai/chat/74ab00a3-8b46-498c-88b0-715e673cbfe5",
-    "title": "Code Merge and Conflict Resolution - Claude",
-    "timestamp": "2025-07-27T12:19:26.287Z",
-    "server_timestamp": "2025-07-27T13:19:26.711417",
-    "domain": "claude.ai"
-  },
-  {
-    "url": "https://www.kimi.com/chat/d22ure66s4t74oi1b4dg",
-    "title": "Flask API Blueprints for Productivity and Window Tracking - Kimi",
-    "timestamp": "2025-07-27T12:19:26.924Z",
-    "server_timestamp": "2025-07-27T13:19:26.931512",
-    "domain": "kimi.com"
-  },
-  {
-    "url": "https://www.kimi.com/chat/d21kd5q0p58tv7ct5240",
-    "title": "Transforming Flask + Next.js to a Tauri Desktop App - Kimi",
-    "timestamp": "2025-07-27T12:19:27.838Z",
-    "server_timestamp": "2025-07-27T13:19:27.970387",
-    "domain": "kimi.com"
-  },
-  {
-    "url": "https://chat.deepseek.com/a/chat/s/143f9a0d-7c2e-4bae-8fd7-4e98ec4f5c04",
-    "title": "Updating analytics.py with WindowHistory class - DeepSeek",
-    "timestamp": "2025-07-27T12:21:14.592Z",
-    "server_timestamp": "2025-07-27T13:21:14.899434",
-    "domain": "chat.deepseek.com"
-  },
-  {
-    "url": "https://github.com/OussamaTabDev/FocusAi-server",
-    "title": "OussamaTabDev/FocusAi-server: this is the server of this project",
-    "timestamp": "2025-07-27T12:23:52.026Z",
-    "server_timestamp": "2025-07-27T13:23:52.343174",
-    "domain": "github.com"
-  },
-  {
-    "url": "https://claude.ai/chat/74ab00a3-8b46-498c-88b0-715e673cbfe5",
-    "title": "Code Merge and Conflict Resolution - Claude",
-    "timestamp": "2025-07-27T12:23:52.209Z",
-    "server_timestamp": "2025-07-27T13:23:52.560856",
-    "domain": "claude.ai"
-  },
-  {
-    "url": "https://www.kimi.com/chat/d22ure66s4t74oi1b4dg",
-    "title": "Flask API Blueprints for Productivity and Window Tracking - Kimi",
-    "timestamp": "2025-07-27T12:23:53.227Z",
-    "server_timestamp": "2025-07-27T13:23:53.553102",
-    "domain": "kimi.com"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=MS5eQ6DQXEc&t=4678s",
-    "title": "(48) عالم دونكي كونق ! | Donkey Kong Bananza - YouTube",
-    "timestamp": "2025-07-27T12:24:21.824Z",
-    "server_timestamp": "2025-07-27T13:24:21.831218",
+    "url": "https://www.youtube.com/watch?v=wcii6pw2IBQ",
+    "title": "(61) هذا اصعب تحدي واجهته بحياتي - YouTube",
+    "timestamp": "2025-07-30T11:51:36.889Z",
+    "server_timestamp": "2025-07-30T12:51:36.979174",
     "domain": "youtube.com"
   },
   {
     "url": "chrome://newtab/",
     "title": "New Tab",
-    "timestamp": "2025-07-27T12:24:23.634Z",
-    "server_timestamp": "2025-07-27T13:24:23.689443",
+    "timestamp": "2025-07-30T11:51:39.599Z",
+    "server_timestamp": "2025-07-30T12:51:39.925402",
     "domain": "newtab"
   },
   {
-    "url": "https://www.youtube.com/channel/UCDlHNz7RAK0vAl5eIKNxrjg",
-    "title": "هدى للناس - YouTube",
-    "timestamp": "2025-07-27T12:24:26.349Z",
-    "server_timestamp": "2025-07-27T13:24:26.664873",
+    "url": "https://www.youtube.com/watch?v=wcii6pw2IBQ",
+    "title": "(61) هذا اصعب تحدي واجهته بحياتي - YouTube",
+    "timestamp": "2025-07-30T11:51:40.477Z",
+    "server_timestamp": "2025-07-30T12:51:40.489819",
     "domain": "youtube.com"
   },
   {
     "url": "chrome://newtab/",
     "title": "New Tab",
-    "timestamp": "2025-07-27T12:24:30.413Z",
-    "server_timestamp": "2025-07-27T13:24:30.638771",
+    "timestamp": "2025-07-30T11:54:08.877Z",
+    "server_timestamp": "2025-07-30T12:54:09.196273",
     "domain": "newtab"
   },
   {
-    "url": "https://www.cloudskillsboost.google/paths/118",
-    "title": "Beginner: Introduction to Generative AI Learning Path | Google Cloud Skills Boost",
-    "timestamp": "2025-07-27T12:24:42.476Z",
-    "server_timestamp": "2025-07-27T13:24:42.615629",
-    "domain": "cloudskillsboost.google"
+    "url": "http://localhost:8082/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-30T11:54:12.719Z",
+    "server_timestamp": "2025-07-30T12:54:12.727928",
+    "domain": "localhost:8082"
   },
   {
-    "url": "https://mail.google.com/mail/u/0/#inbox",
-    "title": "Inbox (3,817) - oussamatabzioui09@gmail.com - Gmail",
-    "timestamp": "2025-07-27T12:25:01.595Z",
-    "server_timestamp": "2025-07-27T13:25:01.910313",
-    "domain": "mail.google.com"
+    "url": "chrome://newtab/",
+    "title": "New Tab",
+    "timestamp": "2025-07-30T11:54:20.046Z",
+    "server_timestamp": "2025-07-30T12:54:20.361008",
+    "domain": "newtab"
   },
   {
-    "url": "https://chat.deepseek.com/a/chat/s/143f9a0d-7c2e-4bae-8fd7-4e98ec4f5c04",
-    "title": "Updating analytics.py with WindowHistory class - DeepSeek",
-    "timestamp": "2025-07-27T12:26:28.629Z",
-    "server_timestamp": "2025-07-27T13:26:28.635656",
-    "domain": "chat.deepseek.com"
+    "url": "http://localhost:8082/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-30T11:54:20.438Z",
+    "server_timestamp": "2025-07-30T12:54:20.613037",
+    "domain": "localhost:8082"
   },
   {
-    "url": "https://github.com/OussamaTabDev/FocusAi-server",
-    "title": "OussamaTabDev/FocusAi-server: this is the server of this project",
-    "timestamp": "2025-07-27T12:33:32.705Z",
-    "server_timestamp": "2025-07-27T13:33:33.015101",
-    "domain": "github.com"
+    "url": "chrome://newtab/",
+    "title": "New Tab",
+    "timestamp": "2025-07-30T11:54:26.890Z",
+    "server_timestamp": "2025-07-30T12:54:27.217309",
+    "domain": "newtab"
   },
   {
-    "url": "https://www.kimi.com/chat/d22vu7tr1r8hg9otndd0",
-    "title": "Extracting API Keys from Environment Variables - Kimi",
-    "timestamp": "2025-07-27T12:33:33.099Z",
-    "server_timestamp": "2025-07-27T13:33:33.281091",
+    "url": "http://localhost:8082/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-30T11:54:27.490Z",
+    "server_timestamp": "2025-07-30T12:54:27.515860",
+    "domain": "localhost:8082"
+  },
+  {
+    "url": "chrome://newtab/",
+    "title": "New Tab",
+    "timestamp": "2025-07-30T11:54:59.245Z",
+    "server_timestamp": "2025-07-30T12:54:59.256700",
+    "domain": "newtab"
+  },
+  {
+    "url": "http://localhost:8082/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-30T11:55:01.157Z",
+    "server_timestamp": "2025-07-30T12:55:01.190674",
+    "domain": "localhost:8082"
+  },
+  {
+    "url": "chrome://newtab/",
+    "title": "New Tab",
+    "timestamp": "2025-07-30T11:55:15.259Z",
+    "server_timestamp": "2025-07-30T12:55:15.300190",
+    "domain": "newtab"
+  },
+  {
+    "url": "http://localhost:8082/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-30T11:55:16.969Z",
+    "server_timestamp": "2025-07-30T12:55:16.992158",
+    "domain": "localhost:8082"
+  },
+  {
+    "url": "chrome://newtab/",
+    "title": "New Tab",
+    "timestamp": "2025-07-30T11:55:23.961Z",
+    "server_timestamp": "2025-07-30T12:55:24.277822",
+    "domain": "newtab"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=wcii6pw2IBQ",
+    "title": "(61) هذا اصعب تحدي واجهته بحياتي - YouTube",
+    "timestamp": "2025-07-30T11:55:24.441Z",
+    "server_timestamp": "2025-07-30T12:55:24.565696",
+    "domain": "youtube.com"
+  },
+  {
+    "url": "chrome://newtab/",
+    "title": "New Tab",
+    "timestamp": "2025-07-30T11:56:26.226Z",
+    "server_timestamp": "2025-07-30T12:56:26.328602",
+    "domain": "newtab"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=wcii6pw2IBQ",
+    "title": "(61) هذا اصعب تحدي واجهته بحياتي - YouTube",
+    "timestamp": "2025-07-30T11:56:28.881Z",
+    "server_timestamp": "2025-07-30T12:56:29.225252",
+    "domain": "youtube.com"
+  },
+  {
+    "url": "http://localhost:8082/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-30T11:57:54.016Z",
+    "server_timestamp": "2025-07-30T12:57:57.801475",
+    "domain": "localhost:8082"
+  },
+  {
+    "url": "chrome://newtab/",
+    "title": "New Tab",
+    "timestamp": "2025-07-30T12:16:15.863Z",
+    "server_timestamp": "2025-07-30T13:16:15.878161",
+    "domain": "newtab"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=wcii6pw2IBQ",
+    "title": "(62) هذا اصعب تحدي واجهته بحياتي - YouTube",
+    "timestamp": "2025-07-30T12:16:17.324Z",
+    "server_timestamp": "2025-07-30T13:16:17.646580",
+    "domain": "youtube.com"
+  },
+  {
+    "url": "http://localhost:8082/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-30T12:16:37.613Z",
+    "server_timestamp": "2025-07-30T13:16:37.749803",
+    "domain": "localhost:8082"
+  },
+  {
+    "url": "chrome://newtab/",
+    "title": "New Tab",
+    "timestamp": "2025-07-30T12:18:41.794Z",
+    "server_timestamp": "2025-07-30T13:18:41.799190",
+    "domain": "newtab"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=wcii6pw2IBQ",
+    "title": "(62) هذا اصعب تحدي واجهته بحياتي - YouTube",
+    "timestamp": "2025-07-30T12:18:43.210Z",
+    "server_timestamp": "2025-07-30T13:18:43.446854",
+    "domain": "youtube.com"
+  },
+  {
+    "url": "https://www.kimi.com/chat/d250o6f37oqdct9a61o0",
+    "title": "i want if the app changes , th - Kimi",
+    "timestamp": "2025-07-30T12:20:30.127Z",
+    "server_timestamp": "2025-07-30T13:20:30.458266",
     "domain": "kimi.com"
   },
   {
-    "url": "https://github.com/OussamaTabDev/FocusAi-server",
-    "title": "OussamaTabDev/FocusAi-server: this is the server of this project",
-    "timestamp": "2025-07-27T12:33:34.169Z",
-    "server_timestamp": "2025-07-27T13:33:34.499612",
-    "domain": "github.com"
+    "url": "http://localhost:8082/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-30T12:20:30.682Z",
+    "server_timestamp": "2025-07-30T13:20:30.723258",
+    "domain": "localhost:8082"
   },
   {
-    "url": "https://claude.ai/chat/74ab00a3-8b46-498c-88b0-715e673cbfe5",
-    "title": "Code Merge and Conflict Resolution - Claude",
-    "timestamp": "2025-07-27T12:33:34.610Z",
-    "server_timestamp": "2025-07-27T13:33:34.764946",
-    "domain": "claude.ai"
-  },
-  {
-    "url": "https://www.kimi.com/chat/d22ure66s4t74oi1b4dg",
-    "title": "Flask API Blueprints for Productivity and Window Tracking - Kimi",
-    "timestamp": "2025-07-27T12:33:35.068Z",
-    "server_timestamp": "2025-07-27T13:33:35.075004",
+    "url": "https://www.kimi.com/chat/d250o6f37oqdct9a61o0",
+    "title": "i want if the app changes , th - Kimi",
+    "timestamp": "2025-07-30T12:20:33.500Z",
+    "server_timestamp": "2025-07-30T13:20:33.818481",
     "domain": "kimi.com"
   },
   {
-    "url": "https://www.cloudskillsboost.google/paths/118",
-    "title": "Beginner: Introduction to Generative AI Learning Path | Google Cloud Skills Boost",
-    "timestamp": "2025-07-27T12:33:43.249Z",
-    "server_timestamp": "2025-07-27T13:33:43.571842",
-    "domain": "cloudskillsboost.google"
+    "url": "https://www.kimi.com/chat/d250o6f37oqdct9a61o0",
+    "title": "i want if the app changes , th - Kimi",
+    "timestamp": "2025-07-30T12:20:35.053Z",
+    "server_timestamp": "2025-07-30T13:20:35.402223",
+    "domain": "kimi.com"
   },
   {
-    "url": "https://mail.google.com/mail/u/0/#inbox",
-    "title": "Inbox (3,817) - oussamatabzioui09@gmail.com - Gmail",
-    "timestamp": "2025-07-27T12:33:44.117Z",
-    "server_timestamp": "2025-07-27T13:33:44.123386",
-    "domain": "mail.google.com"
+    "url": "http://localhost:8082/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-30T12:20:38.591Z",
+    "server_timestamp": "2025-07-30T13:20:38.736335",
+    "domain": "localhost:8082"
   },
   {
-    "url": "https://www.cloudskillsboost.google/paths/118",
-    "title": "Beginner: Introduction to Generative AI Learning Path | Google Cloud Skills Boost",
-    "timestamp": "2025-07-27T12:33:52.915Z",
-    "server_timestamp": "2025-07-27T13:33:53.242095",
-    "domain": "cloudskillsboost.google"
+    "url": "https://www.kimi.com/chat/d250o6f37oqdct9a61o0",
+    "title": "i want if the app changes , th - Kimi",
+    "timestamp": "2025-07-30T12:23:28.074Z",
+    "server_timestamp": "2025-07-30T13:23:28.395567",
+    "domain": "kimi.com"
+  },
+  {
+    "url": "http://localhost:8082/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-30T12:23:28.867Z",
+    "server_timestamp": "2025-07-30T13:23:28.882473",
+    "domain": "localhost:8082"
+  },
+  {
+    "url": "chrome://newtab/",
+    "title": "New Tab",
+    "timestamp": "2025-07-30T12:23:34.190Z",
+    "server_timestamp": "2025-07-30T13:23:34.515622",
+    "domain": "newtab"
+  },
+  {
+    "url": "https://gemini.google.com/app",
+    "title": "Google Gemini",
+    "timestamp": "2025-07-30T12:23:46.353Z",
+    "server_timestamp": "2025-07-30T13:23:46.661450",
+    "domain": "gemini.google.com"
+  },
+  {
+    "url": "http://localhost:8082/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-30T12:24:01.439Z",
+    "server_timestamp": "2025-07-30T13:24:01.752783",
+    "domain": "localhost:8082"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=wcii6pw2IBQ",
+    "title": "(62) هذا اصعب تحدي واجهته بحياتي - YouTube",
+    "timestamp": "2025-07-30T12:24:15.907Z",
+    "server_timestamp": "2025-07-30T13:24:16.225359",
+    "domain": "youtube.com"
+  },
+  {
+    "url": "https://gemini.google.com/app",
+    "title": "Google Gemini",
+    "timestamp": "2025-07-30T12:24:17.504Z",
+    "server_timestamp": "2025-07-30T13:24:17.538456",
+    "domain": "gemini.google.com"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=wcii6pw2IBQ",
+    "title": "(62) هذا اصعب تحدي واجهته بحياتي - YouTube",
+    "timestamp": "2025-07-30T12:24:19.520Z",
+    "server_timestamp": "2025-07-30T13:24:19.539333",
+    "domain": "youtube.com"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=wcii6pw2IBQ",
+    "title": "(62) هذا اصعب تحدي واجهته بحياتي - YouTube",
+    "timestamp": "2025-07-30T12:25:04.859Z",
+    "server_timestamp": "2025-07-30T13:25:04.865263",
+    "domain": "youtube.com"
+  },
+  {
+    "url": "https://www.youtube.com/@AliJumat24",
+    "title": "(62) هذا اصعب تحدي واجهته بحياتي - YouTube",
+    "timestamp": "2025-07-30T12:25:04.864Z",
+    "server_timestamp": "2025-07-30T13:25:05.243747",
+    "domain": "youtube.com"
   },
   {
     "url": "https://www.youtube.com/",
-    "title": "(48) YouTube",
-    "timestamp": "2025-07-27T12:33:53.348Z",
-    "server_timestamp": "2025-07-27T13:33:53.373256",
+    "title": "(62) Ali Jumat I علي الجمعات - YouTube",
+    "timestamp": "2025-07-30T12:25:30.776Z",
+    "server_timestamp": "2025-07-30T13:25:30.803649",
     "domain": "youtube.com"
   },
   {
-    "url": "https://www.youtube.com/watch?v=MS5eQ6DQXEc&t=4678s",
-    "title": "(48) عالم دونكي كونق ! | Donkey Kong Bananza - YouTube",
-    "timestamp": "2025-07-27T12:33:54.897Z",
-    "server_timestamp": "2025-07-27T13:33:55.214792",
+    "url": "https://www.youtube.com/watch?v=-pbsnimpFO8",
+    "title": "(62) YouTube",
+    "timestamp": "2025-07-30T12:25:39.546Z",
+    "server_timestamp": "2025-07-30T13:25:39.567087",
     "domain": "youtube.com"
   },
   {
-    "url": "https://www.youtube.com/results?search_query=%D8%B3%D8%A8%D9%88%D9%86%D8%AC+%D8%A8%D9%88%D8%A8+%D8%B3%D9%83%D9%88%D9%8A%D8%B1+%D8%A8%D8%A7%D9%86%D8%AA%D8%B3",
-    "title": "(48) عالم دونكي كونق ! | Donkey Kong Bananza - YouTube",
-    "timestamp": "2025-07-27T12:33:56.122Z",
-    "server_timestamp": "2025-07-27T13:33:56.136288",
+    "url": "https://www.youtube.com/watch?v=bx9bdk3YAj0",
+    "title": "(62) عملت محرك العاب بيشتغل جوة المتصفح - YouTube",
+    "timestamp": "2025-07-30T12:32:03.062Z",
+    "server_timestamp": "2025-07-30T13:32:03.394677",
     "domain": "youtube.com"
   },
   {
-    "url": "https://www.youtube.com/watch?v=MS5eQ6DQXEc&t=4678s",
-    "title": "(48) عالم دونكي كونق ! | Donkey Kong Bananza - YouTube",
-    "timestamp": "2025-07-27T12:34:00.695Z",
-    "server_timestamp": "2025-07-27T13:34:01.033255",
-    "domain": "youtube.com"
+    "url": "chrome://newtab/",
+    "title": "New Tab",
+    "timestamp": "2025-07-30T12:38:39.563Z",
+    "server_timestamp": "2025-07-30T13:38:39.880616",
+    "domain": "newtab"
   },
   {
-    "url": "https://www.youtube.com/results?search_query=mounim+slimani",
-    "title": "(48) عالم دونكي كونق ! | Donkey Kong Bananza - YouTube",
-    "timestamp": "2025-07-27T12:34:03.713Z",
-    "server_timestamp": "2025-07-27T13:34:04.037362",
-    "domain": "youtube.com"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=MS5eQ6DQXEc&t=4678s",
-    "title": "(48) عالم دونكي كونق ! | Donkey Kong Bananza - YouTube",
-    "timestamp": "2025-07-27T12:34:06.606Z",
-    "server_timestamp": "2025-07-27T13:34:06.944909",
-    "domain": "youtube.com"
-  },
-  {
-    "url": "https://chat.deepseek.com/a/chat/s/143f9a0d-7c2e-4bae-8fd7-4e98ec4f5c04",
-    "title": "Updating analytics.py with WindowHistory class - DeepSeek",
-    "timestamp": "2025-07-27T12:41:29.671Z",
-    "server_timestamp": "2025-07-27T13:41:29.986050",
+    "url": "https://chat.deepseek.com/",
+    "title": "DeepSeek - Into the Unknown",
+    "timestamp": "2025-07-30T12:38:45.347Z",
+    "server_timestamp": "2025-07-30T13:38:45.668120",
     "domain": "chat.deepseek.com"
   },
   {
-    "url": "https://www.kimi.com/chat/d22vu7tr1r8hg9otndd0",
-    "title": "Extracting API Keys from Environment Variables - Kimi",
-    "timestamp": "2025-07-27T12:44:13.775Z",
-    "server_timestamp": "2025-07-27T13:44:14.091278",
-    "domain": "kimi.com"
-  },
-  {
-    "url": "https://github.com/OussamaTabDev/FocusAi-server",
-    "title": "OussamaTabDev/FocusAi-server: this is the server of this project",
-    "timestamp": "2025-07-27T12:44:14.756Z",
-    "server_timestamp": "2025-07-27T13:44:14.779282",
-    "domain": "github.com"
-  },
-  {
-    "url": "https://claude.ai/chat/74ab00a3-8b46-498c-88b0-715e673cbfe5",
-    "title": "Code Merge and Conflict Resolution - Claude",
-    "timestamp": "2025-07-27T12:44:16.422Z",
-    "server_timestamp": "2025-07-27T13:44:16.766260",
-    "domain": "claude.ai"
-  },
-  {
-    "url": "https://chat.deepseek.com/a/chat/s/143f9a0d-7c2e-4bae-8fd7-4e98ec4f5c04",
-    "title": "Updating analytics.py with WindowHistory class - DeepSeek",
-    "timestamp": "2025-07-27T12:44:20.222Z",
-    "server_timestamp": "2025-07-27T13:44:20.377721",
+    "url": "https://chat.deepseek.com/a/chat/s/afc0bf29-491f-4a08-acac-84b21c86385d",
+    "title": "DeepSeek - Into the Unknown",
+    "timestamp": "2025-07-30T12:39:06.125Z",
+    "server_timestamp": "2025-07-30T13:39:06.160272",
     "domain": "chat.deepseek.com"
   },
   {
-    "url": "https://www.kimi.com/chat/d21kd5q0p58tv7ct5240",
-    "title": "Transforming Flask + Next.js to a Tauri Desktop App - Kimi",
-    "timestamp": "2025-07-27T12:44:22.981Z",
-    "server_timestamp": "2025-07-27T13:44:23.304693",
-    "domain": "kimi.com"
+    "url": "http://localhost:8082/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-30T12:42:56.432Z",
+    "server_timestamp": "2025-07-30T13:42:56.747964",
+    "domain": "localhost:8082"
   },
   {
-    "url": "https://www.kimi.com/chat/d22ure66s4t74oi1b4dg",
-    "title": "Flask API Blueprints for Productivity and Window Tracking - Kimi",
-    "timestamp": "2025-07-27T12:44:31.909Z",
-    "server_timestamp": "2025-07-27T13:44:32.219543",
-    "domain": "kimi.com"
-  },
-  {
-    "url": "https://claude.ai/chat/74ab00a3-8b46-498c-88b0-715e673cbfe5",
-    "title": "Code Merge and Conflict Resolution - Claude",
-    "timestamp": "2025-07-27T12:44:32.670Z",
-    "server_timestamp": "2025-07-27T13:44:32.676306",
+    "url": "https://claude.ai/chat/45affc2a-4c74-472d-97d9-d9a649462931",
+    "title": "Claude",
+    "timestamp": "2025-07-30T12:43:08.964Z",
+    "server_timestamp": "2025-07-30T13:43:09.281469",
     "domain": "claude.ai"
   },
   {
-    "url": "https://github.com/OussamaTabDev/FocusAi-server",
-    "title": "OussamaTabDev/FocusAi-server: this is the server of this project",
-    "timestamp": "2025-07-27T12:44:33.335Z",
-    "server_timestamp": "2025-07-27T13:44:33.648414",
+    "url": "https://www.kimi.com/chat/d24vmpogts471co4koeg",
+    "title": "Connecting React Components with API Endpoints - Kimi",
+    "timestamp": "2025-07-30T12:44:01.247Z",
+    "server_timestamp": "2025-07-30T13:44:01.566587",
+    "domain": "kimi.com"
+  },
+  {
+    "url": "http://localhost:8082/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-30T12:51:22.164Z",
+    "server_timestamp": "2025-07-30T13:51:22.480402",
+    "domain": "localhost:8082"
+  },
+  {
+    "url": "https://www.kimi.com/chat/d250o6f37oqdct9a61o0",
+    "title": "i want if the app changes , th - Kimi",
+    "timestamp": "2025-07-30T12:51:25.369Z",
+    "server_timestamp": "2025-07-30T13:51:25.395495",
+    "domain": "kimi.com"
+  },
+  {
+    "url": "http://localhost:8082/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-30T12:51:25.939Z",
+    "server_timestamp": "2025-07-30T13:51:26.276178",
+    "domain": "localhost:8082"
+  },
+  {
+    "url": "http://localhost:8082/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-30T12:55:36.673Z",
+    "server_timestamp": "2025-07-30T13:55:37.000775",
+    "domain": "localhost:8082"
+  },
+  {
+    "url": "http://localhost:8082/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-30T12:56:28.498Z",
+    "server_timestamp": "2025-07-30T13:56:28.820733",
+    "domain": "localhost:8082"
+  },
+  {
+    "url": "https://www.kimi.com/chat/d2522jljqed3580e1ul0",
+    "title": "Create Pinterest-like Masonry Grid in React - Kimi",
+    "timestamp": "2025-07-30T14:13:52.025Z",
+    "server_timestamp": "2025-07-30T15:13:52.343367",
+    "domain": "kimi.com"
+  },
+  {
+    "url": "http://localhost:8082/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-30T14:13:54.664Z",
+    "server_timestamp": "2025-07-30T15:13:54.704315",
+    "domain": "localhost:8082"
+  },
+  {
+    "url": "http://localhost:8082/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-30T14:47:54.784Z",
+    "server_timestamp": "2025-07-30T15:47:56.575270",
+    "domain": "localhost:8082"
+  },
+  {
+    "url": "http://localhost:8080/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-30T14:48:16.007Z",
+    "server_timestamp": "2025-07-30T15:48:16.042287",
+    "domain": "localhost:8080"
+  },
+  {
+    "url": "https://www.kimi.com/chat/d2522jljqed3580e1ul0",
+    "title": "Create Pinterest-like Masonry Grid in React - Kimi",
+    "timestamp": "2025-07-30T14:48:19.820Z",
+    "server_timestamp": "2025-07-30T15:48:20.148238",
+    "domain": "kimi.com"
+  },
+  {
+    "url": "https://github.com/OussamaTabDev",
+    "title": "OussamaTabDev (Oussama Tabzioui)",
+    "timestamp": "2025-07-30T14:48:20.586Z",
+    "server_timestamp": "2025-07-30T15:48:20.597115",
     "domain": "github.com"
   },
   {
-    "url": "https://www.kimi.com/chat/d22vu7tr1r8hg9otndd0",
-    "title": "Extracting API Keys from Environment Variables - Kimi",
-    "timestamp": "2025-07-27T12:44:38.496Z",
-    "server_timestamp": "2025-07-27T13:44:38.527473",
+    "url": "https://www.kimi.com/chat/d2522jljqed3580e1ul0",
+    "title": "Create Pinterest-like Masonry Grid in React - Kimi",
+    "timestamp": "2025-07-30T14:48:21.636Z",
+    "server_timestamp": "2025-07-30T15:48:21.663917",
     "domain": "kimi.com"
   },
   {
-    "url": "https://www.kimi.com/chat/d22ure66s4t74oi1b4dg",
-    "title": "Flask API Blueprints for Productivity and Window Tracking - Kimi",
-    "timestamp": "2025-07-27T12:49:14.037Z",
-    "server_timestamp": "2025-07-27T13:49:14.359644",
+    "url": "https://claude.ai/",
+    "title": "claude.ai",
+    "timestamp": "2025-07-30T14:48:56.446Z",
+    "server_timestamp": "2025-07-30T15:48:56.765258",
+    "domain": "claude.ai"
+  },
+  {
+    "url": "https://www.kimi.com/chat/d2522jljqed3580e1ul0",
+    "title": "Create Pinterest-like Masonry Grid in React - Kimi",
+    "timestamp": "2025-07-30T14:50:51.949Z",
+    "server_timestamp": "2025-07-30T15:50:52.267136",
     "domain": "kimi.com"
+  },
+  {
+    "url": "http://localhost:8080/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-30T14:50:53.181Z",
+    "server_timestamp": "2025-07-30T15:50:53.522545",
+    "domain": "localhost:8080"
+  },
+  {
+    "url": "http://localhost:8080/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-30T14:52:34.821Z",
+    "server_timestamp": "2025-07-30T15:52:35.153031",
+    "domain": "localhost:8080"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=F9oRd-EA-sg",
+    "title": "(63) تلاوة في غاية الجمال سورة (الفرقان) كاملة رعد محمد الكردي ليالي رمضان 2023 Surah-AL-Furqan”Raad KR. - YouTube",
+    "timestamp": "2025-07-30T14:56:36.428Z",
+    "server_timestamp": "2025-07-30T15:56:36.766385",
+    "domain": "youtube.com"
+  },
+  {
+    "url": "https://www.youtube.com/",
+    "title": "YouTube",
+    "timestamp": "2025-07-30T14:56:38.948Z",
+    "server_timestamp": "2025-07-30T15:56:39.286846",
+    "domain": "youtube.com"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=F9oRd-EA-sg",
+    "title": "YouTube",
+    "timestamp": "2025-07-30T14:56:45.486Z",
+    "server_timestamp": "2025-07-30T15:56:45.839460",
+    "domain": "youtube.com"
+  },
+  {
+    "url": "https://www.youtube.com/",
+    "title": "YouTube",
+    "timestamp": "2025-07-30T14:56:48.254Z",
+    "server_timestamp": "2025-07-30T15:56:48.617183",
+    "domain": "youtube.com"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=F9oRd-EA-sg",
+    "title": "YouTube",
+    "timestamp": "2025-07-30T14:56:48.876Z",
+    "server_timestamp": "2025-07-30T15:56:48.887232",
+    "domain": "youtube.com"
+  },
+  {
+    "url": "https://www.youtube.com/",
+    "title": "YouTube",
+    "timestamp": "2025-07-30T14:56:49.006Z",
+    "server_timestamp": "2025-07-30T15:56:49.318330",
+    "domain": "youtube.com"
+  },
+  {
+    "url": "https://claude.ai/",
+    "title": "claude.ai",
+    "timestamp": "2025-07-30T14:57:00.109Z",
+    "server_timestamp": "2025-07-30T15:57:00.421408",
+    "domain": "claude.ai"
+  },
+  {
+    "url": "http://localhost:8080/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-30T14:57:03.476Z",
+    "server_timestamp": "2025-07-30T15:57:03.806535",
+    "domain": "localhost:8080"
+  },
+  {
+    "url": "https://claude.ai/",
+    "title": "claude.ai",
+    "timestamp": "2025-07-30T14:57:03.910Z",
+    "server_timestamp": "2025-07-30T15:57:04.225565",
+    "domain": "claude.ai"
+  },
+  {
+    "url": "http://localhost:8080/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-30T14:57:05.017Z",
+    "server_timestamp": "2025-07-30T15:57:05.028986",
+    "domain": "localhost:8080"
+  },
+  {
+    "url": "https://claude.ai/",
+    "title": "claude.ai",
+    "timestamp": "2025-07-30T14:57:05.547Z",
+    "server_timestamp": "2025-07-30T15:57:05.871395",
+    "domain": "claude.ai"
+  },
+  {
+    "url": "http://localhost:8080/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-30T14:57:06.375Z",
+    "server_timestamp": "2025-07-30T15:57:06.385825",
+    "domain": "localhost:8080"
+  },
+  {
+    "url": "https://www.kimi.com/chat/d2522jljqed3580e1ul0",
+    "title": "Create Pinterest-like Masonry Grid in React - Kimi",
+    "timestamp": "2025-07-30T14:57:08.542Z",
+    "server_timestamp": "2025-07-30T15:57:08.553124",
+    "domain": "kimi.com"
+  },
+  {
+    "url": "https://claude.ai/",
+    "title": "claude.ai",
+    "timestamp": "2025-07-30T14:57:10.833Z",
+    "server_timestamp": "2025-07-30T15:57:10.861334",
+    "domain": "claude.ai"
+  },
+  {
+    "url": "http://localhost:8080/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-30T14:57:12.575Z",
+    "server_timestamp": "2025-07-30T15:57:12.586078",
+    "domain": "localhost:8080"
+  },
+  {
+    "url": "https://claude.ai/",
+    "title": "claude.ai",
+    "timestamp": "2025-07-30T14:57:13.310Z",
+    "server_timestamp": "2025-07-30T15:57:13.678447",
+    "domain": "claude.ai"
+  },
+  {
+    "url": "chrome://newtab/",
+    "title": "New Tab",
+    "timestamp": "2025-07-30T14:57:39.445Z",
+    "server_timestamp": "2025-07-30T15:57:39.544170",
+    "domain": "newtab"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=F9oRd-EA-sg",
+    "title": "تلاوة في غاية الجمال سورة (الفرقان) كاملة رعد محمد الكردي ليالي رمضان 2023 Surah-AL-Furqan”Raad KR. - YouTube",
+    "timestamp": "2025-07-30T14:57:41.419Z",
+    "server_timestamp": "2025-07-30T15:57:41.444277",
+    "domain": "youtube.com"
+  },
+  {
+    "url": "https://claude.ai/",
+    "title": "claude.ai",
+    "timestamp": "2025-07-30T14:57:52.151Z",
+    "server_timestamp": "2025-07-30T15:57:52.469400",
+    "domain": "claude.ai"
+  },
+  {
+    "url": "http://localhost:8080/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-30T14:57:56.852Z",
+    "server_timestamp": "2025-07-30T15:57:56.871789",
+    "domain": "localhost:8080"
+  },
+  {
+    "url": "https://chat.deepseek.com/",
+    "title": "chat.deepseek.com",
+    "timestamp": "2025-07-30T14:58:03.717Z",
+    "server_timestamp": "2025-07-30T15:58:08.345784",
+    "domain": "chat.deepseek.com"
+  },
+  {
+    "url": "https://claude.ai/",
+    "title": "claude.ai",
+    "timestamp": "2025-07-30T14:58:04.771Z",
+    "server_timestamp": "2025-07-30T15:58:08.359042",
+    "domain": "claude.ai"
+  },
+  {
+    "url": "http://localhost:8080/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-30T14:58:36.787Z",
+    "server_timestamp": "2025-07-30T15:58:36.822854",
+    "domain": "localhost:8080"
+  },
+  {
+    "url": "https://chat.deepseek.com/",
+    "title": "chat.deepseek.com",
+    "timestamp": "2025-07-30T15:00:02.095Z",
+    "server_timestamp": "2025-07-30T16:00:02.409598",
+    "domain": "chat.deepseek.com"
+  },
+  {
+    "url": "http://localhost:8080/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-30T15:00:18.445Z",
+    "server_timestamp": "2025-07-30T16:00:18.769665",
+    "domain": "localhost:8080"
+  },
+  {
+    "url": "https://www.kimi.com/chat/d2522jljqed3580e1ul0",
+    "title": "Create Pinterest-like Masonry Grid in React - Kimi",
+    "timestamp": "2025-07-30T15:00:34.140Z",
+    "server_timestamp": "2025-07-30T16:00:34.466688",
+    "domain": "kimi.com"
+  },
+  {
+    "url": "https://chat.deepseek.com/",
+    "title": "chat.deepseek.com",
+    "timestamp": "2025-07-30T15:00:41.484Z",
+    "server_timestamp": "2025-07-30T16:00:41.795610",
+    "domain": "chat.deepseek.com"
+  },
+  {
+    "url": "http://localhost:8080/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-30T15:00:47.512Z",
+    "server_timestamp": "2025-07-30T16:00:47.832124",
+    "domain": "localhost:8080"
+  },
+  {
+    "url": "https://claude.ai/",
+    "title": "claude.ai",
+    "timestamp": "2025-07-30T15:07:06.923Z",
+    "server_timestamp": "2025-07-30T16:07:07.243398",
+    "domain": "claude.ai"
+  },
+  {
+    "url": "https://github.com/OussamaTabDev",
+    "title": "OussamaTabDev (Oussama Tabzioui)",
+    "timestamp": "2025-07-30T15:07:08.028Z",
+    "server_timestamp": "2025-07-30T16:07:08.357554",
+    "domain": "github.com"
+  },
+  {
+    "url": "http://localhost:8080/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-30T21:55:02.249Z",
+    "server_timestamp": "2025-07-30T22:55:02.617024",
+    "domain": "localhost:8080"
+  },
+  {
+    "url": "https://www.kimi.com/chat/d258rs3mtofboidku0d0",
+    "title": "React Focus Mode UI Integration - Kimi",
+    "timestamp": "2025-07-30T21:56:37.467Z",
+    "server_timestamp": "2025-07-30T22:56:37.787964",
+    "domain": "kimi.com"
+  },
+  {
+    "url": "https://www.kimi.com/",
+    "title": "React Focus Mode UI Integration - Kimi",
+    "timestamp": "2025-07-30T21:56:38.566Z",
+    "server_timestamp": "2025-07-30T22:56:38.898075",
+    "domain": "kimi.com"
+  },
+  {
+    "url": "http://localhost:8080/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-30T21:57:48.127Z",
+    "server_timestamp": "2025-07-30T22:57:48.450617",
+    "domain": "localhost:8080"
+  },
+  {
+    "url": "https://chat.deepseek.com/",
+    "title": "DeepSeek - Into the Unknown",
+    "timestamp": "2025-07-30T22:01:13.899Z",
+    "server_timestamp": "2025-07-30T23:01:14.210454",
+    "domain": "chat.deepseek.com"
+  },
+  {
+    "url": "chrome://newtab/",
+    "title": "New Tab",
+    "timestamp": "2025-07-30T22:01:19.035Z",
+    "server_timestamp": "2025-07-30T23:01:19.365124",
+    "domain": "newtab"
+  },
+  {
+    "url": "https://chat.deepseek.com/",
+    "title": "DeepSeek - Into the Unknown",
+    "timestamp": "2025-07-30T22:01:24.039Z",
+    "server_timestamp": "2025-07-30T23:01:24.364904",
+    "domain": "chat.deepseek.com"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=F9oRd-EA-sg",
+    "title": "YouTube",
+    "timestamp": "2025-07-30T22:01:45.994Z",
+    "server_timestamp": "2025-07-30T23:01:46.330219",
+    "domain": "youtube.com"
+  },
+  {
+    "url": "http://localhost:8080/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-30T22:08:49.370Z",
+    "server_timestamp": "2025-07-30T23:08:51.448193",
+    "domain": "localhost:8080"
+  },
+  {
+    "url": "chrome://newtab/",
+    "title": "New Tab",
+    "timestamp": "2025-07-30T22:14:45.864Z",
+    "server_timestamp": "2025-07-30T23:14:46.192761",
+    "domain": "newtab"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=F9oRd-EA-sg",
+    "title": "تلاوة في غاية الجمال سورة (الفرقان) كاملة رعد محمد الكردي ليالي رمضان 2023 Surah-AL-Furqan”Raad KR. - YouTube",
+    "timestamp": "2025-07-30T22:14:46.265Z",
+    "server_timestamp": "2025-07-30T23:14:46.447761",
+    "domain": "youtube.com"
+  },
+  {
+    "url": "http://localhost:8080/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-30T22:15:03.518Z",
+    "server_timestamp": "2025-07-30T23:15:03.638153",
+    "domain": "localhost:8080"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=F9oRd-EA-sg",
+    "title": "تلاوة في غاية الجمال سورة (الفرقان) كاملة رعد محمد الكردي ليالي رمضان 2023 Surah-AL-Furqan”Raad KR. - YouTube",
+    "timestamp": "2025-07-30T22:15:04.164Z",
+    "server_timestamp": "2025-07-30T23:15:04.486083",
+    "domain": "youtube.com"
+  },
+  {
+    "url": "http://localhost:8080/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-30T22:15:04.165Z",
+    "server_timestamp": "2025-07-30T23:15:04.487084",
+    "domain": "localhost:8080"
+  },
+  {
+    "url": "chrome://newtab/",
+    "title": "New Tab",
+    "timestamp": "2025-07-30T22:15:13.009Z",
+    "server_timestamp": "2025-07-30T23:15:13.088627",
+    "domain": "newtab"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=F9oRd-EA-sg",
+    "title": "تلاوة في غاية الجمال سورة (الفرقان) كاملة رعد محمد الكردي ليالي رمضان 2023 Surah-AL-Furqan”Raad KR. - YouTube",
+    "timestamp": "2025-07-30T22:15:14.095Z",
+    "server_timestamp": "2025-07-30T23:15:14.425355",
+    "domain": "youtube.com"
+  },
+  {
+    "url": "http://localhost:8080/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-30T22:43:44.707Z",
+    "server_timestamp": "2025-07-30T23:43:46.956942",
+    "domain": "localhost:8080"
+  },
+  {
+    "url": "http://localhost:8080/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-30T23:01:40.573Z",
+    "server_timestamp": "2025-07-31T00:01:40.947306",
+    "domain": "localhost:8080"
+  },
+  {
+    "url": "https://www.kimi.com/chat/d25i7dsr4dji77jbakkg",
+    "title": "how to auto port between backe - Kimi",
+    "timestamp": "2025-07-31T08:58:39.030Z",
+    "server_timestamp": "2025-07-31T09:58:39.365923",
+    "domain": "kimi.com"
+  },
+  {
+    "url": "https://www.kimi.com/",
+    "title": "how to auto port between backe - Kimi",
+    "timestamp": "2025-07-31T08:58:40.095Z",
+    "server_timestamp": "2025-07-31T09:58:40.123061",
+    "domain": "kimi.com"
+  },
+  {
+    "url": "https://www.kimi.com/chat/d25j0l4jc3f9enlhaglg",
+    "title": "Kimi AI – Kimi K2 is Live",
+    "timestamp": "2025-07-31T08:59:02.075Z",
+    "server_timestamp": "2025-07-31T09:59:02.105514",
+    "domain": "kimi.com"
+  },
+  {
+    "url": "https://www.kimi.com/chat/d25j0l4jc3f9enlhaglg",
+    "title": "Additional Windows Application Entries - Kimi",
+    "timestamp": "2025-07-31T09:03:43.311Z",
+    "server_timestamp": "2025-07-31T10:03:43.630566",
+    "domain": "kimi.com"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=5Welk51oDWs",
+    "title": "(69) NeoVim Is Better, But Why Devs Are Not Switching To It? | Prime Reacts - YouTube",
+    "timestamp": "2025-07-31T09:03:43.343Z",
+    "server_timestamp": "2025-07-31T10:03:43.662567",
+    "domain": "youtube.com"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=5Welk51oDWs",
+    "title": "(69) NeoVim Is Better, But Why Devs Are Not Switching To It? | Prime Reacts - YouTube",
+    "timestamp": "2025-07-31T09:05:12.823Z",
+    "server_timestamp": "2025-07-31T10:05:12.840545",
+    "domain": "youtube.com"
+  },
+  {
+    "url": "https://www.youtube.com/",
+    "title": "(69) NeoVim Is Better, But Why Devs Are Not Switching To It? | Prime Reacts - YouTube",
+    "timestamp": "2025-07-31T09:05:12.837Z",
+    "server_timestamp": "2025-07-31T10:05:13.158405",
+    "domain": "youtube.com"
+  },
+  {
+    "url": "https://claude.ai/chat/484d6caf-a446-4fc0-b63b-01cdeae7bab0",
+    "title": "Claude",
+    "timestamp": "2025-07-31T09:05:14.103Z",
+    "server_timestamp": "2025-07-31T10:05:14.584211",
+    "domain": "claude.ai"
+  },
+  {
+    "url": "https://www.youtube.com/",
+    "title": "(69) YouTube",
+    "timestamp": "2025-07-31T09:05:26.598Z",
+    "server_timestamp": "2025-07-31T10:05:26.647829",
+    "domain": "youtube.com"
+  },
+  {
+    "url": "https://claude.ai/chat/484d6caf-a446-4fc0-b63b-01cdeae7bab0",
+    "title": "Claude",
+    "timestamp": "2025-07-31T09:05:57.155Z",
+    "server_timestamp": "2025-07-31T10:05:57.167959",
+    "domain": "claude.ai"
+  },
+  {
+    "url": "https://github.com/SuboptimalEng/dotfiles/blob/master/vscode/settings.json",
+    "title": "dotfiles/vscode/settings.json at master · SuboptimalEng/dotfiles",
+    "timestamp": "2025-07-31T09:06:22.089Z",
+    "server_timestamp": "2025-07-31T10:06:22.132160",
+    "domain": "github.com"
+  },
+  {
+    "url": "https://www.youtube.com/",
+    "title": "(69) YouTube",
+    "timestamp": "2025-07-31T09:06:24.900Z",
+    "server_timestamp": "2025-07-31T10:06:24.915586",
+    "domain": "youtube.com"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=39jP8nVkBWc",
+    "title": "(69) YouTube",
+    "timestamp": "2025-07-31T09:06:27.587Z",
+    "server_timestamp": "2025-07-31T10:06:27.903038",
+    "domain": "youtube.com"
+  },
+  {
+    "url": "chrome://newtab/",
+    "title": "New Tab",
+    "timestamp": "2025-07-31T09:16:22.253Z",
+    "server_timestamp": "2025-07-31T10:16:22.574430",
+    "domain": "newtab"
+  },
+  {
+    "url": "https://www.kimi.com/",
+    "title": "Kimi - 会推理解析，能深度思考的AI助手",
+    "timestamp": "2025-07-31T09:16:33.415Z",
+    "server_timestamp": "2025-07-31T10:16:33.455989",
+    "domain": "kimi.com"
+  },
+  {
+    "url": "https://www.kimi.com/",
+    "title": "Kimi AI – Kimi K2 is Live",
+    "timestamp": "2025-07-31T09:17:36.949Z",
+    "server_timestamp": "2025-07-31T10:17:36.955824",
+    "domain": "kimi.com"
+  },
+  {
+    "url": "https://www.kimi.com/chat/d25j9bu0ftlh7ksd54og",
+    "title": "Kimi AI – Kimi K2 is Live",
+    "timestamp": "2025-07-31T09:17:36.953Z",
+    "server_timestamp": "2025-07-31T10:17:37.275325",
+    "domain": "kimi.com"
+  },
+  {
+    "url": "http://localhost:8080/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-31T09:29:35.689Z",
+    "server_timestamp": "2025-07-31T10:29:35.697587",
+    "domain": "localhost:8080"
+  },
+  {
+    "url": "https://www.kimi.com/chat/d25j9bu0ftlh7ksd54og",
+    "title": "Filter Modes by 'Focus' in Name - Kimi",
+    "timestamp": "2025-07-31T09:29:36.195Z",
+    "server_timestamp": "2025-07-31T10:29:36.534711",
+    "domain": "kimi.com"
+  },
+  {
+    "url": "http://localhost:8080/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-31T09:29:37.701Z",
+    "server_timestamp": "2025-07-31T10:29:37.755727",
+    "domain": "localhost:8080"
+  },
+  {
+    "url": "chrome://newtab/",
+    "title": "New Tab",
+    "timestamp": "2025-07-31T09:29:49.432Z",
+    "server_timestamp": "2025-07-31T10:29:49.457146",
+    "domain": "newtab"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=39jP8nVkBWc",
+    "title": "YouTube",
+    "timestamp": "2025-07-31T09:29:50.520Z",
+    "server_timestamp": "2025-07-31T10:29:50.526774",
+    "domain": "youtube.com"
+  },
+  {
+    "url": "chrome://newtab/",
+    "title": "New Tab",
+    "timestamp": "2025-07-31T09:29:56.855Z",
+    "server_timestamp": "2025-07-31T10:29:56.873795",
+    "domain": "newtab"
+  },
+  {
+    "url": "http://localhost:8080/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-31T09:30:06.378Z",
+    "server_timestamp": "2025-07-31T10:30:06.429859",
+    "domain": "localhost:8080"
+  },
+  {
+    "url": "chrome://newtab/",
+    "title": "New Tab",
+    "timestamp": "2025-07-31T09:30:07.680Z",
+    "server_timestamp": "2025-07-31T10:30:08.044957",
+    "domain": "newtab"
+  },
+  {
+    "url": "http://localhost:8080/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-31T09:30:07.685Z",
+    "server_timestamp": "2025-07-31T10:30:08.087565",
+    "domain": "localhost:8080"
+  },
+  {
+    "url": "https://www.kimi.com/chat/d25j9bu0ftlh7ksd54og",
+    "title": "Filter Modes by 'Focus' in Name - Kimi",
+    "timestamp": "2025-07-31T09:30:11.257Z",
+    "server_timestamp": "2025-07-31T10:30:11.577919",
+    "domain": "kimi.com"
+  },
+  {
+    "url": "https://search.brave.com/search?q=pornhub&source=desktop",
+    "title": "pornhub - Brave Search",
+    "timestamp": "2025-07-31T09:30:11.843Z",
+    "server_timestamp": "2025-07-31T10:30:12.153595",
+    "domain": "search.brave.com"
+  },
+  {
+    "url": "https://www.pornhub.com/",
+    "title": "Free Porn Videos & Sex Movies - Porno, XXX, Porn Tube | Pornhub",
+    "timestamp": "2025-07-31T09:30:25.077Z",
+    "server_timestamp": "2025-07-31T10:30:25.085994",
+    "domain": "pornhub.com"
+  },
+  {
+    "url": "chrome://newtab/",
+    "title": "New Tab",
+    "timestamp": "2025-07-31T09:31:12.054Z",
+    "server_timestamp": "2025-07-31T10:31:12.403943",
+    "domain": "newtab"
+  },
+  {
+    "url": "https://www.pornhub.com/",
+    "title": "Free Porn Videos & Sex Movies - Porno, XXX, Porn Tube | Pornhub",
+    "timestamp": "2025-07-31T09:31:14.304Z",
+    "server_timestamp": "2025-07-31T10:31:14.780503",
+    "domain": "pornhub.com"
+  },
+  {
+    "url": "http://localhost:8080/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-31T09:31:14.322Z",
+    "server_timestamp": "2025-07-31T10:31:15.222506",
+    "domain": "localhost:8080"
+  },
+  {
+    "url": "https://www.kimi.com/chat/d25j9bu0ftlh7ksd54og",
+    "title": "Kimi - 会推理解析，能深度思考的AI助手",
+    "timestamp": "2025-07-31T09:31:16.998Z",
+    "server_timestamp": "2025-07-31T10:31:17.314142",
+    "domain": "kimi.com"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=39jP8nVkBWc",
+    "title": "YouTube",
+    "timestamp": "2025-07-31T09:31:21.391Z",
+    "server_timestamp": "2025-07-31T10:31:21.397087",
+    "domain": "youtube.com"
+  },
+  {
+    "url": "https://claude.ai/chat/484d6caf-a446-4fc0-b63b-01cdeae7bab0",
+    "title": "Claude",
+    "timestamp": "2025-07-31T09:31:30.565Z",
+    "server_timestamp": "2025-07-31T10:31:30.773198",
+    "domain": "claude.ai"
+  },
+  {
+    "url": "https://docs.google.com/forms/d/e/1FAIpQLSf03NtQqy1JOL_q3gUUnsyhDidNoGCkiygj3zMDYRaSOAbD7A/viewform",
+    "title": "Pré-inscription pour passer le concours d'accès au Master spécialisé \"Management de l’Information\"",
+    "timestamp": "2025-07-31T09:31:35.827Z",
+    "server_timestamp": "2025-07-31T10:31:35.840351",
+    "domain": "docs.google.com"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=39jP8nVkBWc",
+    "title": "سورة الحاقه 🔺 مش ممكن عالجمال والجوده المذهله | روائع الشيخ مصطفي اسماعيل - YouTube",
+    "timestamp": "2025-07-31T09:31:47.300Z",
+    "server_timestamp": "2025-07-31T10:31:47.646350",
+    "domain": "youtube.com"
+  },
+  {
+    "url": "https://claude.ai/chat/484d6caf-a446-4fc0-b63b-01cdeae7bab0",
+    "title": "Timer Integration for Focus Mode - Claude",
+    "timestamp": "2025-07-31T09:32:05.386Z",
+    "server_timestamp": "2025-07-31T10:32:05.726941",
+    "domain": "claude.ai"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=39jP8nVkBWc",
+    "title": "(69) سورة الحاقه 🔺 مش ممكن عالجمال والجوده المذهله | روائع الشيخ مصطفي اسماعيل - YouTube",
+    "timestamp": "2025-07-31T09:32:14.354Z",
+    "server_timestamp": "2025-07-31T10:32:14.686240",
+    "domain": "youtube.com"
+  },
+  {
+    "url": "https://claude.ai/chat/484d6caf-a446-4fc0-b63b-01cdeae7bab0",
+    "title": "Timer Integration for Focus Mode - Claude",
+    "timestamp": "2025-07-31T09:32:59.715Z",
+    "server_timestamp": "2025-07-31T10:33:00.034635",
+    "domain": "claude.ai"
+  },
+  {
+    "url": "chrome://newtab/",
+    "title": "New Tab",
+    "timestamp": "2025-07-31T09:34:02.571Z",
+    "server_timestamp": "2025-07-31T10:34:02.884564",
+    "domain": "newtab"
+  },
+  {
+    "url": "http://localhost:8080/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-31T09:34:02.932Z",
+    "server_timestamp": "2025-07-31T10:34:03.151503",
+    "domain": "localhost:8080"
+  },
+  {
+    "url": "chrome://newtab/",
+    "title": "New Tab",
+    "timestamp": "2025-07-31T09:34:05.043Z",
+    "server_timestamp": "2025-07-31T10:34:05.173087",
+    "domain": "newtab"
+  },
+  {
+    "url": "http://localhost:8080/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-31T09:34:06.325Z",
+    "server_timestamp": "2025-07-31T10:34:06.373978",
+    "domain": "localhost:8080"
+  },
+  {
+    "url": "chrome://newtab/",
+    "title": "New Tab",
+    "timestamp": "2025-07-31T09:34:06.328Z",
+    "server_timestamp": "2025-07-31T10:34:06.695497",
+    "domain": "newtab"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=hUrIN8j1FSI",
+    "title": "(69) سورة الحاقه 🔺 مش ممكن عالجمال والجوده المذهله | روائع الشيخ مصطفي اسماعيل - YouTube",
+    "timestamp": "2025-07-31T09:41:51.545Z",
+    "server_timestamp": "2025-07-31T10:41:51.858415",
+    "domain": "youtube.com"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=hUrIN8j1FSI",
+    "title": "(69) قل متاع الدنيا قليل 🔺يقرؤها بكل احساس وخشوع 🔺روائع الشيخ مصطفي اسماعيل - YouTube",
+    "timestamp": "2025-07-31T09:42:57.681Z",
+    "server_timestamp": "2025-07-31T10:42:57.689544",
+    "domain": "youtube.com"
+  },
+  {
+    "url": "https://claude.ai/chat/484d6caf-a446-4fc0-b63b-01cdeae7bab0",
+    "title": "Timer Integration for Focus Mode - Claude",
+    "timestamp": "2025-07-31T09:43:04.709Z",
+    "server_timestamp": "2025-07-31T10:43:05.050894",
+    "domain": "claude.ai"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=hUrIN8j1FSI",
+    "title": "(69) قل متاع الدنيا قليل 🔺يقرؤها بكل احساس وخشوع 🔺روائع الشيخ مصطفي اسماعيل - YouTube",
+    "timestamp": "2025-07-31T09:43:18.637Z",
+    "server_timestamp": "2025-07-31T10:43:18.981508",
+    "domain": "youtube.com"
+  },
+  {
+    "url": "https://claude.ai/chat/484d6caf-a446-4fc0-b63b-01cdeae7bab0",
+    "title": "Timer Integration for Focus Mode - Claude",
+    "timestamp": "2025-07-31T09:43:47.389Z",
+    "server_timestamp": "2025-07-31T10:43:47.427064",
+    "domain": "claude.ai"
+  },
+  {
+    "url": "http://localhost:8080/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-31T09:46:28.819Z",
+    "server_timestamp": "2025-07-31T10:46:29.154656",
+    "domain": "localhost:8080"
+  },
+  {
+    "url": "chrome://newtab/",
+    "title": "New Tab",
+    "timestamp": "2025-07-31T09:47:30.841Z",
+    "server_timestamp": "2025-07-31T10:47:30.848809",
+    "domain": "newtab"
+  },
+  {
+    "url": "https://chat.deepseek.com/",
+    "title": "DeepSeek - Into the Unknown",
+    "timestamp": "2025-07-31T09:47:53.731Z",
+    "server_timestamp": "2025-07-31T10:47:53.753848",
+    "domain": "chat.deepseek.com"
+  },
+  {
+    "url": "https://chat.deepseek.com/a/chat/s/40431464-b610-4751-858d-ca74b74346f3",
+    "title": "DeepSeek - Into the Unknown",
+    "timestamp": "2025-07-31T09:48:42.416Z",
+    "server_timestamp": "2025-07-31T10:48:42.430803",
+    "domain": "chat.deepseek.com"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=hUrIN8j1FSI",
+    "title": "(69) قل متاع الدنيا قليل 🔺يقرؤها بكل احساس وخشوع 🔺روائع الشيخ مصطفي اسماعيل - YouTube",
+    "timestamp": "2025-07-31T09:52:23.777Z",
+    "server_timestamp": "2025-07-31T10:52:24.099227",
+    "domain": "youtube.com"
+  },
+  {
+    "url": "https://chat.deepseek.com/a/chat/s/40431464-b610-4751-858d-ca74b74346f3",
+    "title": "DeepSeek - Into the Unknown",
+    "timestamp": "2025-07-31T09:52:28.418Z",
+    "server_timestamp": "2025-07-31T10:52:28.755122",
+    "domain": "chat.deepseek.com"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=LJ9gA0ZiD7o",
+    "title": "(69) قل متاع الدنيا قليل 🔺يقرؤها بكل احساس وخشوع 🔺روائع الشيخ مصطفي اسماعيل - YouTube",
+    "timestamp": "2025-07-31T10:04:12.018Z",
+    "server_timestamp": "2025-07-31T11:04:12.244612",
+    "domain": "youtube.com"
+  },
+  {
+    "url": "https://claude.ai/chat/484d6caf-a446-4fc0-b63b-01cdeae7bab0",
+    "title": "Timer Integration for Focus Mode - Claude",
+    "timestamp": "2025-07-31T10:07:36.054Z",
+    "server_timestamp": "2025-07-31T11:07:36.365006",
+    "domain": "claude.ai"
+  },
+  {
+    "url": "https://claude.ai/new",
+    "title": "Timer Integration for Focus Mode - Claude",
+    "timestamp": "2025-07-31T10:07:37.993Z",
+    "server_timestamp": "2025-07-31T11:07:38.318266",
+    "domain": "claude.ai"
+  },
+  {
+    "url": "https://claude.ai/chat/e0d1f4b8-5ea8-4345-8b76-288bcf4ee632",
+    "title": "Claude",
+    "timestamp": "2025-07-31T10:08:16.225Z",
+    "server_timestamp": "2025-07-31T11:08:16.241559",
+    "domain": "claude.ai"
+  },
+  {
+    "url": "chrome://newtab/",
+    "title": "New Tab",
+    "timestamp": "2025-07-31T10:11:07.913Z",
+    "server_timestamp": "2025-07-31T11:11:08.230528",
+    "domain": "newtab"
+  },
+  {
+    "url": "https://www.youtube.com/",
+    "title": "YouTube",
+    "timestamp": "2025-07-31T10:11:10.874Z",
+    "server_timestamp": "2025-07-31T11:11:10.883614",
+    "domain": "youtube.com"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=LJ9gA0ZiD7o",
+    "title": "(69) سورة الحاقه | مش ممكن عالجمال والجوده المذهله | روائع الشيخ مصطفي اسماعيل - YouTube",
+    "timestamp": "2025-07-31T10:11:37.768Z",
+    "server_timestamp": "2025-07-31T11:11:37.783488",
+    "domain": "youtube.com"
+  },
+  {
+    "url": "https://www.youtube.com/",
+    "title": "(69) YouTube",
+    "timestamp": "2025-07-31T10:12:36.311Z",
+    "server_timestamp": "2025-07-31T11:12:36.316413",
+    "domain": "youtube.com"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=LJ9gA0ZiD7o",
+    "title": "(69) سورة الحاقه | مش ممكن عالجمال والجوده المذهله | روائع الشيخ مصطفي اسماعيل - YouTube",
+    "timestamp": "2025-07-31T10:12:37.350Z",
+    "server_timestamp": "2025-07-31T11:12:37.663353",
+    "domain": "youtube.com"
+  },
+  {
+    "url": "https://www.youtube.com/",
+    "title": "(69) YouTube",
+    "timestamp": "2025-07-31T10:12:38.248Z",
+    "server_timestamp": "2025-07-31T11:12:38.261862",
+    "domain": "youtube.com"
+  },
+  {
+    "url": "chrome://newtab/",
+    "title": "New Tab",
+    "timestamp": "2025-07-31T10:13:29.956Z",
+    "server_timestamp": "2025-07-31T11:13:29.966046",
+    "domain": "newtab"
+  },
+  {
+    "url": "https://www.youtube.com/",
+    "title": "YouTube",
+    "timestamp": "2025-07-31T10:13:33.584Z",
+    "server_timestamp": "2025-07-31T11:13:33.902421",
+    "domain": "youtube.com"
+  },
+  {
+    "url": "chrome://newtab/",
+    "title": "New Tab",
+    "timestamp": "2025-07-31T10:13:38.085Z",
+    "server_timestamp": "2025-07-31T11:13:38.406103",
+    "domain": "newtab"
+  },
+  {
+    "url": "http://localhost:8080/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-31T10:13:40.138Z",
+    "server_timestamp": "2025-07-31T11:13:40.491626",
+    "domain": "localhost:8080"
+  },
+  {
+    "url": "https://www.youtube.com/",
+    "title": "(69) YouTube",
+    "timestamp": "2025-07-31T10:13:41.954Z",
+    "server_timestamp": "2025-07-31T11:13:41.997643",
+    "domain": "youtube.com"
+  },
+  {
+    "url": "http://localhost:8080/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-31T10:13:43.938Z",
+    "server_timestamp": "2025-07-31T11:13:43.970862",
+    "domain": "localhost:8080"
+  },
+  {
+    "url": "https://www.youtube.com/",
+    "title": "(69) YouTube",
+    "timestamp": "2025-07-31T10:13:45.150Z",
+    "server_timestamp": "2025-07-31T11:13:45.202073",
+    "domain": "youtube.com"
+  },
+  {
+    "url": "http://localhost:8080/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-31T10:13:47.241Z",
+    "server_timestamp": "2025-07-31T11:13:47.293674",
+    "domain": "localhost:8080"
+  },
+  {
+    "url": "https://www.youtube.com/",
+    "title": "(69) YouTube",
+    "timestamp": "2025-07-31T10:13:50.726Z",
+    "server_timestamp": "2025-07-31T11:13:51.045444",
+    "domain": "youtube.com"
+  },
+  {
+    "url": "chrome://newtab/",
+    "title": "New Tab",
+    "timestamp": "2025-07-31T10:13:51.897Z",
+    "server_timestamp": "2025-07-31T11:13:51.911222",
+    "domain": "newtab"
+  },
+  {
+    "url": "https://www.youtube.com/",
+    "title": "(69) YouTube",
+    "timestamp": "2025-07-31T10:13:52.579Z",
+    "server_timestamp": "2025-07-31T11:13:52.604052",
+    "domain": "youtube.com"
+  },
+  {
+    "url": "http://localhost:8080/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-31T10:13:57.027Z",
+    "server_timestamp": "2025-07-31T11:13:57.351298",
+    "domain": "localhost:8080"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=LJ9gA0ZiD7o",
+    "title": "(69) سورة الحاقه | مش ممكن عالجمال والجوده المذهله | روائع الشيخ مصطفي اسماعيل - YouTube",
+    "timestamp": "2025-07-31T10:14:09.427Z",
+    "server_timestamp": "2025-07-31T11:14:09.468974",
+    "domain": "youtube.com"
+  },
+  {
+    "url": "https://www.youtube.com/",
+    "title": "(69) YouTube",
+    "timestamp": "2025-07-31T10:14:46.191Z",
+    "server_timestamp": "2025-07-31T11:14:46.197924",
+    "domain": "youtube.com"
+  },
+  {
+    "url": "http://localhost:8080/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-31T10:14:47.419Z",
+    "server_timestamp": "2025-07-31T11:14:47.758388",
+    "domain": "localhost:8080"
+  },
+  {
+    "url": "https://www.youtube.com/",
+    "title": "(69) YouTube",
+    "timestamp": "2025-07-31T10:14:55.743Z",
+    "server_timestamp": "2025-07-31T11:14:55.760645",
+    "domain": "youtube.com"
+  },
+  {
+    "url": "http://localhost:8080/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-31T10:14:58.005Z",
+    "server_timestamp": "2025-07-31T11:14:58.026988",
+    "domain": "localhost:8080"
+  },
+  {
+    "url": "https://www.youtube.com/",
+    "title": "(69) YouTube",
+    "timestamp": "2025-07-31T10:15:14.011Z",
+    "server_timestamp": "2025-07-31T11:15:14.379486",
+    "domain": "youtube.com"
+  },
+  {
+    "url": "chrome://newtab/",
+    "title": "New Tab",
+    "timestamp": "2025-07-31T10:15:14.704Z",
+    "server_timestamp": "2025-07-31T11:15:14.729888",
+    "domain": "newtab"
+  },
+  {
+    "url": "https://www.youtube.com/",
+    "title": "(69) YouTube",
+    "timestamp": "2025-07-31T10:15:15.374Z",
+    "server_timestamp": "2025-07-31T11:15:15.687550",
+    "domain": "youtube.com"
+  },
+  {
+    "url": "chrome://newtab/",
+    "title": "New Tab",
+    "timestamp": "2025-07-31T10:15:16.622Z",
+    "server_timestamp": "2025-07-31T11:15:16.959957",
+    "domain": "newtab"
+  },
+  {
+    "url": "http://localhost:8080/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-31T10:15:16.900Z",
+    "server_timestamp": "2025-07-31T11:15:17.207019",
+    "domain": "localhost:8080"
+  },
+  {
+    "url": "http://localhost:8080/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-31T10:40:45.469Z",
+    "server_timestamp": "2025-07-31T11:40:45.793619",
+    "domain": "localhost:8080"
+  },
+  {
+    "url": "http://localhost:8080/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-31T10:42:35.012Z",
+    "server_timestamp": "2025-07-31T11:42:35.346253",
+    "domain": "localhost:8080"
+  },
+  {
+    "url": "http://localhost:8080/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-31T11:07:27.626Z",
+    "server_timestamp": "2025-07-31T12:07:27.955670",
+    "domain": "localhost:8080"
+  },
+  {
+    "url": "chrome://newtab/",
+    "title": "New Tab",
+    "timestamp": "2025-07-31T11:09:23.158Z",
+    "server_timestamp": "2025-07-31T12:09:23.480452",
+    "domain": "newtab"
+  },
+  {
+    "url": "https://www.kimi.com/",
+    "title": "Kimi - 会推理解析，能深度思考的AI助手",
+    "timestamp": "2025-07-31T11:09:30.005Z",
+    "server_timestamp": "2025-07-31T12:09:30.007704",
+    "domain": "kimi.com"
+  },
+  {
+    "url": "https://www.kimi.com/",
+    "title": "Kimi AI – Kimi K2 is Live",
+    "timestamp": "2025-07-31T11:10:01.726Z",
+    "server_timestamp": "2025-07-31T12:10:01.738501",
+    "domain": "kimi.com"
+  },
+  {
+    "url": "https://www.kimi.com/chat/d25ku27ahd8ci87mbln0",
+    "title": "Kimi AI – Kimi K2 is Live",
+    "timestamp": "2025-07-31T11:10:01.734Z",
+    "server_timestamp": "2025-07-31T12:10:02.048493",
+    "domain": "kimi.com"
+  },
+  {
+    "url": "chrome://newtab/",
+    "title": "New Tab",
+    "timestamp": "2025-07-31T17:52:12.324Z",
+    "server_timestamp": "2025-07-31T18:52:12.652272",
+    "domain": "newtab"
+  },
+  {
+    "url": "http://localhost:8080/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-31T17:52:14.431Z",
+    "server_timestamp": "2025-07-31T18:52:14.763409",
+    "domain": "localhost:8080"
+  },
+  {
+    "url": "https://www.kimi.com/",
+    "title": "Kimi AI – Kimi K2 is Live",
+    "timestamp": "2025-07-31T17:52:20.934Z",
+    "server_timestamp": "2025-07-31T18:52:21.268999",
+    "domain": "kimi.com"
+  },
+  {
+    "url": "http://localhost:8080/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-31T17:52:22.045Z",
+    "server_timestamp": "2025-07-31T18:52:22.080893",
+    "domain": "localhost:8080"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=3eqn3sK2E98",
+    "title": "(72) الطور والحديد ♕ تلاوة #ملكوتية !! أحد افضل تلاواته النادرة .. الشيخ محمد صديق المنشاوي `HQ - YouTube",
+    "timestamp": "2025-07-31T17:52:22.553Z",
+    "server_timestamp": "2025-07-31T18:52:22.896781",
+    "domain": "youtube.com"
+  },
+  {
+    "url": "https://www.kimi.com/",
+    "title": "Kimi AI – Kimi K2 is Live",
+    "timestamp": "2025-07-31T17:52:22.558Z",
+    "server_timestamp": "2025-07-31T18:52:22.903789",
+    "domain": "kimi.com"
+  },
+  {
+    "url": "http://localhost:8080/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-31T17:52:22.608Z",
+    "server_timestamp": "2025-07-31T18:52:23.036068",
+    "domain": "localhost:8080"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=3eqn3sK2E98",
+    "title": "(72) الطور والحديد ♕ تلاوة #ملكوتية !! أحد افضل تلاواته النادرة .. الشيخ محمد صديق المنشاوي `HQ - YouTube",
+    "timestamp": "2025-07-31T17:52:48.364Z",
+    "server_timestamp": "2025-07-31T18:52:48.391146",
+    "domain": "youtube.com"
+  },
+  {
+    "url": "https://www.kimi.com/",
+    "title": "Kimi AI – Kimi K2 is Live",
+    "timestamp": "2025-07-31T17:52:49.556Z",
+    "server_timestamp": "2025-07-31T18:52:49.899178",
+    "domain": "kimi.com"
+  },
+  {
+    "url": "http://localhost:8080/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-31T17:52:57.510Z",
+    "server_timestamp": "2025-07-31T18:52:57.546233",
+    "domain": "localhost:8080"
+  },
+  {
+    "url": "https://www.kimi.com/",
+    "title": "Kimi AI – Kimi K2 is Live",
+    "timestamp": "2025-07-31T17:53:02.056Z",
+    "server_timestamp": "2025-07-31T18:53:02.384189",
+    "domain": "kimi.com"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=3eqn3sK2E98",
+    "title": "(72) الطور والحديد ♕ تلاوة #ملكوتية !! أحد افضل تلاواته النادرة .. الشيخ محمد صديق المنشاوي `HQ - YouTube",
+    "timestamp": "2025-07-31T17:55:46.748Z",
+    "server_timestamp": "2025-07-31T18:55:47.065344",
+    "domain": "youtube.com"
+  },
+  {
+    "url": "http://localhost:8080/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-31T17:58:04.462Z",
+    "server_timestamp": "2025-07-31T18:58:04.846330",
+    "domain": "localhost:8080"
+  },
+  {
+    "url": "chrome://newtab/",
+    "title": "New Tab",
+    "timestamp": "2025-07-31T17:58:04.862Z",
+    "server_timestamp": "2025-07-31T18:58:05.119152",
+    "domain": "newtab"
+  },
+  {
+    "url": "http://localhost:8080/",
+    "title": "FocusAi tracker",
+    "timestamp": "2025-07-31T18:21:01.380Z",
+    "server_timestamp": "2025-07-31T19:21:01.708880",
+    "domain": "localhost:8080"
+  },
+  {
+    "url": "chrome://newtab/",
+    "title": "New Tab",
+    "timestamp": "2025-07-31T18:21:03.783Z",
+    "server_timestamp": "2025-07-31T19:21:04.141399",
+    "domain": "newtab"
   }
 ]

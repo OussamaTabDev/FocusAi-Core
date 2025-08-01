@@ -85,6 +85,7 @@ class AppStatisticsDB(Base):
     
     id = Column(Integer, primary_key=True)
     app_name = Column(String(255), nullable=False, unique=True, index=True)
+    day_use = Column(DateTime , nullable=False, index=True)
     
     # Time tracking
     total_time = Column(Float, default=0.0)  # seconds

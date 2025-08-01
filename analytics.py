@@ -1,6 +1,5 @@
-# analytics.py
 from collections import defaultdict
-from typing import Dict, List, Optional , Tuple
+from typing import Dict, List, Optional, Tuple
 from datetime import datetime, timedelta
 from models import WindowInfo
 import logging
@@ -11,40 +10,61 @@ class SessionAnalytics:
     def __init__(self, window_history):
         self.window_history = window_history
 
-    # In analytics.py, update the get_time_by_app method:
-    def get_time_by_app(self, hours: Optional[int] = None) -> Dict[str, float]:
+    def get_time_by_app(self, hours: Optional[int] = None, specific_day: Optional[str] = str(datetime.today().date())) -> Dict[str, float]:
         """Calculates total time spent in each application."""
         try:
-            if hours is not None:
-                result = self.window_history.get_app_usage_summary(hours)
-                return result if result else {}
+            if specific_day:
+                start_of_day = datetime.strptime(specific_day, "%Y-%m-%d")
+                end_of_day = start_of_day + timedelta(days=1)
+                records = [r for r in self.window_history.raw_history 
+                           if start_of_day <= datetime.fromisoformat(r.timestamp) < end_of_day]
+            elif hours is not None:
+                cutoff = datetime.now() - timedelta(hours=hours)
+                records = [r for r in self.window_history.raw_history 
+                           if datetime.fromisoformat(r.timestamp) >= cutoff]
             else:
-                # Get all-time statistics
-                stats = {}
-                for app_name, app_stats in self.window_history.get_app_statistics().items():
-                    stats[app_name] = app_stats.total_time
-                return dict(sorted(stats.items(), key=lambda item: item[1], reverse=True))
+                records = self.window_history.raw_history
+
+            stats = defaultdict(float)
+            for record in records:
+                stats[record.app] += self.window_history.tracker.interval
+
+            return dict(sorted(stats.items(), key=lambda item: item[1], reverse=True))
         except Exception as e:
             logging.error(f"Error in get_time_by_app: {e}")
             return {}
-        
-    def get_time_by_window_type(self) -> Dict[str, float]:
+
+    def get_time_by_window_type(self, specific_day: Optional[str] = str(datetime.today().date())) -> Dict[str, float]:
         """Calculates total time spent in each window type."""
+        if specific_day:
+            start_of_day = datetime.strptime(specific_day, "%Y-%m-%d")
+            end_of_day = start_of_day + timedelta(days=1)
+            records = [r for r in self.window_history.raw_history 
+                       if start_of_day <= datetime.fromisoformat(r.timestamp) < end_of_day]
+        else:
+            records = self.window_history.raw_history
+
         stats = defaultdict(float)
-        for record in self.window_history.raw_history:
+        for record in records:
             stats[record.window_type] += self.window_history.tracker.interval
+
         return dict(sorted(stats.items(), key=lambda item: item[1], reverse=True))
 
-    def get_top_windows(self, n: int = 5, hours: Optional[int] = None) -> List[Dict]:
+    def get_top_raw_windows(self, n: int = 0, hours: Optional[int] = None, specific_day: Optional[str] = str(datetime.today().date())) -> List[Dict]:
         """Finds the most frequently focused individual windows."""
         usage = defaultdict(float)
         window_details = {}
         
         # Determine which records to process
-        if hours is not None:
+        if specific_day:
+            start_of_day = datetime.strptime(specific_day, "%Y-%m-%d")
+            end_of_day = start_of_day + timedelta(days=1)
+            records = [r for r in self.window_history.raw_history 
+                       if start_of_day <= datetime.fromisoformat(r.timestamp) < end_of_day]
+        elif hours is not None:
             cutoff = datetime.now() - timedelta(hours=hours)
             records = [r for r in self.window_history.raw_history 
-                      if datetime.fromisoformat(r.timestamp) >= cutoff]
+                       if datetime.fromisoformat(r.timestamp) >= cutoff]
         else:
             records = self.window_history.raw_history
 
@@ -57,7 +77,8 @@ class SessionAnalytics:
             }
 
         sorted_usage = sorted(usage.items(), key=lambda item: item[1], reverse=True)
-
+        if n == 0:
+            n = len(sorted_usage)
         top_windows = []
         for window_id, total_time in sorted_usage[:n]:
             details = window_details[window_id]
@@ -66,159 +87,234 @@ class SessionAnalytics:
             
         return top_windows
 
-    def get_productivity_summary(self, hours: Optional[int] = None) -> Dict[str, Dict[str, float]]:
+    def get_top_windows(self, n: int = 5, hours: Optional[int] = None, specific_day: Optional[str] = str(datetime.today().date())) -> List[Dict]:
+        """Finds the most frequently focused individual windows, combining those with the same app name."""
+        all_windows = self.get_top_raw_windows(hours=hours, specific_day=specific_day)
+        
+        # Aggregate usage times for windows with the same application name (case-insensitive)
+        app_usage = defaultdict(float)
+        app_details = {}
+        
+        for window in all_windows:
+            app_name = window["app"].lower()
+            app_usage[app_name] += window["time_seconds"]
+            
+            if app_name not in app_details:
+                app_details[app_name] = {
+                    "display_title": window["display_title"],
+                    "app": window["app"],
+                    "type": window["type"],
+                    "time_seconds": window["time_seconds"]
+                }
+            else:
+                # Update the display title to the most frequently used one
+                if window["time_seconds"] > app_details[app_name]["time_seconds"]:
+                    app_details[app_name]["display_title"] = window["display_title"]
+                    app_details[app_name]["time_seconds"] = window["time_seconds"]
+        
+        # Sort the aggregated app usage by time
+        sorted_app_usage = sorted(app_usage.items(), key=lambda item: item[1], reverse=True)
+        
+        top_apps = []
+        for app_name, total_time in sorted_app_usage[:n]:
+            details = app_details[app_name]
+            details["time_seconds"] = total_time
+            top_apps.append(details)
+            
+        return top_apps
+
+    def get_productivity_summary(self, hours: Optional[int] = None, specific_day: Optional[str] = str(datetime.today().date())) -> Dict[str, Dict[str, float]]:
         """
         Get comprehensive productivity status summary.
         If hours is None, returns all-time statistics.
         """
-        if hours is not None:
-            return self.window_history.get_status_summary(hours)
+        if specific_day:
+            start_of_day = datetime.strptime(specific_day, "%Y-%m-%d")
+            end_of_day = start_of_day + timedelta(days=1)
+            records = [r for r in self.window_history.raw_history 
+                       if start_of_day <= datetime.fromisoformat(r.timestamp) < end_of_day]
+        elif hours is not None:
+            cutoff = datetime.now() - timedelta(hours=hours)
+            records = [r for r in self.window_history.raw_history 
+                       if datetime.fromisoformat(r.timestamp) >= cutoff]
         else:
-            # Calculate all-time statistics
-            status_times = defaultdict(float)
-            status_details = {
-                'Productive': defaultdict(float),
-                'Neutral': defaultdict(float),
-                'Distracting': defaultdict(float),
-                'Blocked': defaultdict(float)
-            }
-            
-            for session in self.window_history.app_sessions:
-                if session.status_changes:
-                    time_per_status = session.total_duration / len(session.status_changes)
-                    for _, status in session.status_changes:
-                        status_times[status] += time_per_status
-                        status_details[status][session.app_name] += time_per_status
-                else:
-                    status_times['Neutral'] += session.total_duration
-                    status_details['Neutral'][session.app_name] += session.total_duration
-            
-            # Include current session if exists
-            if self.window_history.current_session:
-                session = self.window_history.current_session
-                duration = (datetime.now() - session.start_time).total_seconds()
-                
-                if session.status_changes:
-                    time_per_status = duration / len(session.status_changes)
-                    for _, status in session.status_changes:
-                        status_times[status] += time_per_status
-                        status_details[status][session.app_name] += time_per_status
-                else:
-                    status_times['Neutral'] += duration
-                    status_details['Neutral'][session.app_name] += duration
-            
-            total_time = sum(status_times.values())
-            
-            # Calculate percentages
-            status_percentages = {}
-            for status in ['Productive', 'Neutral', 'Distracting', 'Blocked']:
-                if total_time > 0:
-                    status_percentages[status] = (status_times[status] / total_time) * 100
-                else:
-                    status_percentages[status] = 0.0
-            
-            return {
-                'times': dict(status_times),
-                'percentages': status_percentages,
-                'details': {k: dict(v) for k, v in status_details.items()},
-                'total_time': total_time
-            }
+            records = self.window_history.raw_history
 
-    def get_productive_apps_ranking(self, hours: Optional[int] = None) -> List[Tuple[str, float, float]]:
+        status_times = defaultdict(float)
+        status_details = {
+            'Productive': defaultdict(float),
+            'Neutral': defaultdict(float),
+            'Distracting': defaultdict(float),
+            'Blocked': defaultdict(float)
+        }
+        
+        for record in records:
+            status = record.status  # Assuming each record has a 'status' attribute
+            status_times[status] += self.window_history.tracker.interval
+            status_details[status][record.app] += self.window_history.tracker.interval
+
+        total_time = sum(status_times.values())
+        
+        # Calculate percentages
+        status_percentages = {}
+        for status in ['Productive', 'Neutral', 'Distracting', 'Blocked']:
+            if total_time > 0:
+                status_percentages[status] = (status_times[status] / total_time) * 100
+            else:
+                status_percentages[status] = 0.0
+        
+        return {
+            'times': dict(status_times),
+            'percentages': status_percentages,
+            'details': {k: dict(v) for k, v in status_details.items()},
+            'total_time': total_time
+        }
+
+    def get_productive_apps_ranking(self, hours: Optional[int] = None, specific_day: Optional[str] = str(datetime.today().date())) -> List[Tuple[str, float, float]]:
         """
         Get apps ranked by productivity.
         Returns: [(app_name, productive_time, productivity_ratio), ...]
         """
-        if hours is not None:
-            return self.window_history.get_productive_apps_ranking(hours)
+        if specific_day:
+            start_of_day = datetime.strptime(specific_day, "%Y-%m-%d")
+            end_of_day = start_of_day + timedelta(days=1)
+            records = [r for r in self.window_history.raw_history 
+                       if start_of_day <= datetime.fromisoformat(r.timestamp) < end_of_day]
+        elif hours is not None:
+            cutoff = datetime.now() - timedelta(hours=hours)
+            records = [r for r in self.window_history.raw_history 
+                       if datetime.fromisoformat(r.timestamp) >= cutoff]
         else:
-            # Calculate all-time rankings
-            app_stats = defaultdict(lambda: {'productive': 0.0, 'total': 0.0})
-            
-            for session in self.window_history.app_sessions:
-                if session.status_changes:
-                    productive_time = session.total_duration * (
-                        sum(1 for _, status in session.status_changes if status == 'Productive') / 
-                        len(session.status_changes)
-                    )
-                    app_stats[session.app_name]['productive'] += productive_time
-                    app_stats[session.app_name]['total'] += session.total_duration
-            
-            # Include current session if exists
-            if self.window_history.current_session:
-                session = self.window_history.current_session
-                duration = (datetime.now() - session.start_time).total_seconds()
-                
-                if session.status_changes:
-                    productive_time = duration * (
-                        sum(1 for _, status in session.status_changes if status == 'Productive') / 
-                        len(session.status_changes)
-                    )
-                    app_stats[session.app_name]['productive'] += productive_time
-                    app_stats[session.app_name]['total'] += duration
-            
-            app_rankings = []
-            for app_name, stats in app_stats.items():
-                productivity_ratio = stats['productive'] / stats['total'] if stats['total'] > 0 else 0.0
-                app_rankings.append((app_name, stats['productive'], productivity_ratio))
-            
-            # Sort by productive time (descending)
-            app_rankings.sort(key=lambda x: x[1], reverse=True)
-            
-            return app_rankings
+            records = self.window_history.raw_history
 
-    # In analytics.py, add this method to the SessionAnalytics class:
-    def get_distracting_apps_ranking(self, hours: Optional[int] = None) -> List[Tuple[str, float, float]]:
+        app_stats = defaultdict(lambda: {'productive': 0.0, 'total': 0.0})
+        
+        for record in records:
+            if record.status == 'Productive':
+                app_stats[record.app]['productive'] += self.window_history.tracker.interval
+            app_stats[record.app]['total'] += self.window_history.tracker.interval
+
+        app_rankings = []
+        for app_name, stats in app_stats.items():
+            productivity_ratio = stats['productive'] / stats['total'] if stats['total'] > 0 else 0.0
+            app_rankings.append((app_name, stats['productive'], productivity_ratio))
+        
+        # Sort by productive time (descending)
+        app_rankings.sort(key=lambda x: x[1], reverse=True)
+        
+        return app_rankings
+
+    def get_distracting_apps_ranking(self, hours: Optional[int] = None, specific_day: Optional[str] = str(datetime.today().date())) -> List[Tuple[str, float, float]]:
         """
         Get apps ranked by distraction time.
         Returns: [(app_name, distracting_time, distraction_ratio), ...]
         """
-        if hours is not None:
-            return self.window_history.get_distracting_apps_ranking(hours)
+        if specific_day:
+            start_of_day = datetime.strptime(specific_day, "%Y-%m-%d")
+            end_of_day = start_of_day + timedelta(days=1)
+            records = [r for r in self.window_history.raw_history 
+                       if start_of_day <= datetime.fromisoformat(r.timestamp) < end_of_day]
+        elif hours is not None:
+            cutoff = datetime.now() - timedelta(hours=hours)
+            records = [r for r in self.window_history.raw_history 
+                       if datetime.fromisoformat(r.timestamp) >= cutoff]
         else:
-            # Calculate all-time rankings
-            app_stats = defaultdict(lambda: {'distracting': 0.0, 'total': 0.0})
-            
-            for session in self.window_history.app_sessions:
-                if session.status_changes:
-                    distracting_time = session.total_duration * (
-                        sum(1 for _, status in session.status_changes if status == 'Distracting') / 
-                        len(session.status_changes)
-                    )
-                    app_stats[session.app_name]['distracting'] += distracting_time
-                    app_stats[session.app_name]['total'] += session.total_duration
-            
-            # Include current session if exists
-            if self.window_history.current_session:
-                session = self.window_history.current_session
-                duration = (datetime.now() - session.start_time).total_seconds()
-                
-                if session.status_changes:
-                    distracting_time = duration * (
-                        sum(1 for _, status in session.status_changes if status == 'Distracting') / 
-                        len(session.status_changes)
-                    )
-                    app_stats[session.app_name]['distracting'] += distracting_time
-                    app_stats[session.app_name]['total'] += duration
-            
-            app_rankings = []
-            for app_name, stats in app_stats.items():
-                distraction_ratio = stats['distracting'] / stats['total'] if stats['total'] > 0 else 0.0
-                app_rankings.append((app_name, stats['distracting'], distraction_ratio))
-            
-            # Sort by distracting time (descending)
-            app_rankings.sort(key=lambda x: x[1], reverse=True)
-            
-            return app_rankings
-    
-    def get_daily_summary(self, days: int = 7) -> List[Dict]:
-        """Get daily summaries for the last N days."""
-        return self.window_history.get_daily_summary_range(days)
+            records = self.window_history.raw_history
 
-    def get_weekly_summary(self, weeks: int = 4) -> List[Dict]:
-        """Get weekly summaries for the last N weeks."""
-        return self.window_history.get_weekly_summary_range(weeks)
+        app_stats = defaultdict(lambda: {'distracting': 0.0, 'total': 0.0})
+        
+        for record in records:
+            if record.status == 'Distracting':
+                app_stats[record.app]['distracting'] += self.window_history.tracker.interval
+            app_stats[record.app]['total'] += self.window_history.tracker.interval
 
-    def get_monthly_summary(self, months: int = 6) -> List[Dict]:
-        """Get monthly summaries for the last N months."""
-        return self.window_history.get_monthly_summary_range(months)
+        app_rankings = []
+        for app_name, stats in app_stats.items():
+            distraction_ratio = stats['distracting'] / stats['total'] if stats['total'] > 0 else 0.0
+            app_rankings.append((app_name, stats['distracting'], distraction_ratio))
+        
+        # Sort by distracting time (descending)
+        app_rankings.sort(key=lambda x: x[1], reverse=True)
+        
+        return app_rankings
+
+    def get_daily_summary(self, days: int = 7, specific_day: Optional[str] = str(datetime.today().date())) -> List[Dict]:
+        """Get daily summaries for the last N days or a specific day."""
+        if specific_day:
+            start_of_day = datetime.strptime(specific_day, "%Y-%m-%d")
+            end_of_day = start_of_day + timedelta(days=1)
+            records = [r for r in self.window_history.raw_history 
+                       if start_of_day <= datetime.fromisoformat(r.timestamp) < end_of_day]
+        else:
+            cutoff = datetime.now() - timedelta(days=days)
+            records = [r for r in self.window_history.raw_history 
+                       if datetime.fromisoformat(r.timestamp) >= cutoff]
+
+        daily_summaries = []
+        for i in range(days):
+            date = datetime.now() - timedelta(days=i)
+            start_of_day = date.replace(hour=0, minute=0, second=0, microsecond=0)
+            end_of_day = start_of_day + timedelta(days=1)
+            day_records = [r for r in records if start_of_day <= datetime.fromisoformat(r.timestamp) < end_of_day]
+            daily_summaries.append({
+                'date': start_of_day.date(),
+                'total_time': sum(self.window_history.tracker.interval for r in day_records),
+                'productive_time': sum(self.window_history.tracker.interval for r in day_records if r.status == 'Productive'),
+                'distracting_time': sum(self.window_history.tracker.interval for r in day_records if r.status == 'Distracting')
+            })
+
+        return daily_summaries
+
+    def get_weekly_summary(self, weeks: int = 4, specific_day: Optional[str] = str(datetime.today().date())) -> List[Dict]:
+        """Get weekly summaries for the last N weeks or a specific week."""
+        if specific_day:
+            start_of_week = datetime.strptime(specific_day, "%Y-%m-%d") - timedelta(days=datetime.strptime(specific_day, "%Y-%m-%d").weekday())
+            end_of_week = start_of_week + timedelta(days=7)
+            records = [r for r in self.window_history.raw_history 
+                       if start_of_week <= datetime.fromisoformat(r.timestamp) < end_of_week]
+        else:
+            cutoff = datetime.now() - timedelta(weeks=weeks)
+            records = [r for r in self.window_history.raw_history 
+                       if datetime.fromisoformat(r.timestamp) >= cutoff]
+
+        weekly_summaries = []
+        for i in range(weeks):
+            date = datetime.now() - timedelta(weeks=i)
+            start_of_week = date - timedelta(days=date.weekday())
+            end_of_week = start_of_week + timedelta(days=7)
+            week_records = [r for r in records if start_of_week <= datetime.fromisoformat(r.timestamp) < end_of_week]
+            weekly_summaries.append({
+                'week_start': start_of_week.date(),
+                'total_time': sum(self.window_history.tracker.interval for r in week_records),
+                'productive_time': sum(self.window_history.tracker.interval for r in week_records if r.status == 'Productive'),
+                'distracting_time': sum(self.window_history.tracker.interval for r in week_records if r.status == 'Distracting')
+            })
+
+        return weekly_summaries
+
+    def get_monthly_summary(self, months: int = 6, specific_day: Optional[str] = str(datetime.today().date())) -> List[Dict]:
+        """Get monthly summaries for the last N months or a specific month."""
+        if specific_day:
+            start_of_month = datetime.strptime(specific_day, "%Y-%m-%d").replace(day=1)
+            end_of_month = (start_of_month.replace(day=28) + timedelta(days=4)).replace(day=1) - timedelta(days=1)
+            records = [r for r in self.window_history.raw_history 
+                       if start_of_month <= datetime.fromisoformat(r.timestamp) <= end_of_month]
+        else:
+            cutoff = datetime.now() - timedelta(days=months * 30)
+            records = [r for r in self.window_history.raw_history 
+                       if datetime.fromisoformat(r.timestamp) >= cutoff]
+
+        monthly_summaries = []
+        for i in range(months):
+            date = datetime.now() - timedelta(days=i * 30)
+            start_of_month = date.replace(day=1)
+            end_of_month = (start_of_month.replace(day=28) + timedelta(days=4)).replace(day=1) - timedelta(days=1)
+            month_records = [r for r in records if start_of_month <= datetime.fromisoformat(r.timestamp) <= end_of_month]
+            monthly_summaries.append({
+                'month_start': start_of_month.date(),
+                'total_time': sum(self.window_history.tracker.interval for r in month_records),
+                'productive_time': sum(self.window_history.tracker.interval for r in month_records if r.status == 'Productive'),
+                'distracting_time': sum(self.window_history.tracker.interval for r in month_records if r.status == 'Distracting')
+            })
+
+        return monthly_summaries

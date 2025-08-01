@@ -213,9 +213,13 @@ class ModeController:
         """Handle blocked apps based on current mode settings"""
         if not action_block or window_info.status != "Blocked":
             return
-            
-        if window_info.window_type == "browser":
+        print(window_info.window_type)
+        is_blocked = True
+        if window_info.window_type == "browser" or window_info.window_type == "adult_content":
             self.browser_controller.close_tab_smart(window_info)
+            
+        elif not is_blocked :
+            self.window_controller.close_window(window_info)
         else:
             self.window_controller.close_window(window_info)
 

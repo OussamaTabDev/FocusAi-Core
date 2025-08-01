@@ -106,7 +106,7 @@ class DatabaseManager:
         """Save or update app statistics"""
         with self.get_session() as db_session:
             try:
-                db_stats = db_session.query(AppStatisticsDB).filter_by(app_name=stats.app_name).first()
+                db_stats = db_session.query(AppStatisticsDB).filter_by(app_name=stats.app_name , day_use=datetime.today().date() ).first()
                 if db_stats:
                     # Update existing
                     db_stats.total_time = stats.total_time
@@ -121,6 +121,7 @@ class DatabaseManager:
                     db_stats = AppStatisticsDB(
                         app_name=stats.app_name,
                         total_time=stats.total_time,
+                        day_use = datetime.today().date(),
                         session_count=stats.session_count,
                         average_session_duration=stats.average_session_duration,
                         longest_session=stats.longest_session,
@@ -159,12 +160,15 @@ class DatabaseManager:
             
             return [self._convert_db_session_to_app_session(s) for s in db_sessions]
     
-    def get_app_statistics(self, app_name: Optional[str] = None) -> Dict[str, AppStatistics]:
+    def get_app_statistics(self, app_name: Optional[str] = None , day_use = datetime.today().date()) -> Dict[str, AppStatistics]:
         """Get app statistics from database"""
         with self.get_session() as db_session:
             query = db_session.query(AppStatisticsDB)
             if app_name:
-                query = query.filter_by(app_name=app_name)
+                if day_use:
+                    query = query.filter_by(app_name=app_name, day_use=day_use)
+                else:
+                    query = query.filter_by(app_name=app_name)
             
             db_stats = query.all()
             result = {}

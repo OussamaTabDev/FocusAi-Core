@@ -34,7 +34,8 @@
     ],
     "media_player": [
         "vlc",
-        "potplayer"
+        "potplayer",
+        "VLC media player"
     ],
     "entertainment": [
         "steam",
