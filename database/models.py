@@ -82,24 +82,21 @@ class AppSessionDB(Base):
 class AppStatisticsDB(Base):
     """Aggregated app statistics"""
     __tablename__ = 'app_statistics'
-    
+
     id = Column(Integer, primary_key=True)
     app_name = Column(String(255), nullable=False, unique=True, index=True)
-    day_use = Column(DateTime , nullable=False, index=True)
-    
-    # Time tracking
-    total_time = Column(Float, default=0.0)  # seconds
+
+    # NEW: the calendar day this row counts usage for
+    day_use = Column(DateTime, nullable=False, index=True)
+
+    # --- everything below is unchanged ---
+    total_time = Column(Float, default=0.0)          # seconds
     session_count = Column(Integer, default=0)
     average_session_duration = Column(Float, default=0.0)
     longest_session = Column(Float, default=0.0)
     last_used = Column(DateTime)
-    
-    # Context and status breakdowns as JSON
-    contexts = Column(JSON)  # {context: time_spent}
-    statuses = Column(JSON)  # {status: time_spent}
-    
-    # Update timestamp
+    contexts = Column(JSON)
+    statuses = Column(JSON)
     updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
-    
-    # Relationships
+
     sessions = relationship("AppSessionDB", back_populates="statistics")
