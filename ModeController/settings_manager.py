@@ -5,7 +5,7 @@ from datetime import timedelta
 from typing import Dict, Optional, Any, List
 from dataclasses import asdict
 from .models import ModeSettings
-from .enums import ModeType, StandardSubMode, FocusType
+from .enums import ModeType, StandardSubMode
 
 logger = logging.getLogger(__name__)
 
@@ -179,7 +179,7 @@ class SettingsManager:
         """Convert JSON config to ModeSettings object and store it"""
         mode_type = ModeType[config["mode_type"]]
         submode = StandardSubMode[config["submode"]] if "submode" in config else None
-        focus_type = FocusType[config["focus_type"]] if "focus_type" in config else None
+        focus_type = config["focus_type"] if "focus_type" in config else None
         
         # Generate settings key
         key = self._generate_mode_key(mode_type, submode, focus_type)
@@ -196,7 +196,7 @@ class SettingsManager:
         self.mode_settings[key] = settings
     
     def _generate_mode_key(self, mode_type: ModeType, submode: Optional[StandardSubMode] = None, 
-                      focus_type: Optional[FocusType] = None) -> str:
+                      focus_type: Optional[str] = None) -> str:
         """Generate a unique key for the mode configuration
         
         For STANDARD mode, the key incorporates submode and focus type if applicable.
@@ -204,7 +204,7 @@ class SettingsManager:
         """
         if mode_type == ModeType.STANDARD:
             if submode == StandardSubMode.FOCUS and focus_type:
-                return f"standard_focus_{focus_type.name.lower()}"
+                return f"standard_focus_{focus_type.lower()}"
             elif submode:
                 return f"standard_{submode.name.lower()}"
             return "standard"

@@ -9,7 +9,7 @@ import sys
 import atexit
 from concurrent.futures import ThreadPoolExecutor
 
-from .enums import ModeType, StandardSubMode, FocusType
+from .enums import ModeType, StandardSubMode
 from .models import ModeSettings
 from .settings_manager import SettingsManager
 from models import WindowInfo
@@ -49,7 +49,7 @@ class ModeController:
         # Current state - initialize to safe defaults
         self.current_mode = ModeType.STANDARD
         self.current_submode = StandardSubMode.NORMAL
-        self.current_focus_type: Optional[FocusType] = None
+        self.current_focus_type: Optional[str] = None
         self.is_active = False
         self.mode_start_time: Optional[datetime] = None
         
@@ -226,7 +226,7 @@ class ModeController:
     # === FLEXIBLE MODE SWITCHING METHODS ===
     
     def switch_to_mode(self, mode: ModeType, submode: Optional[StandardSubMode] = None, 
-                      focus_type: Optional[FocusType] = None, custom_settings: Optional[Dict] = None) -> bool:
+                      focus_type: Optional[str] = None, custom_settings: Optional[Dict] = None) -> bool:
         """
         Universal method to switch to any mode/submode/focus combination.
         Returns True if switch was successful, False otherwise.
@@ -250,7 +250,7 @@ class ModeController:
             return self._perform_mode_switch(mode, submode, focus_type, custom_settings)
 
     def _validate_mode_combination(self, mode: ModeType, submode: Optional[StandardSubMode], 
-                                 focus_type: Optional[FocusType]) -> bool:
+                                 focus_type: Optional[str]) -> bool:
         """Validate that the requested mode combination is valid."""
         if mode == ModeType.KIDS:
             if submode is not None or focus_type is not None:
@@ -271,7 +271,7 @@ class ModeController:
         return True
 
     def _perform_mode_switch(self, mode: ModeType, submode: Optional[StandardSubMode], 
-                           focus_type: Optional[FocusType], custom_settings: Optional[Dict]) -> bool:
+                           focus_type: Optional[str], custom_settings: Optional[Dict]) -> bool:
         """Perform the actual mode switch with proper cleanup and setup."""
         self._transitioning = True
         
@@ -354,7 +354,7 @@ class ModeController:
             return False
 
     def _apply_mode_settings(self, mode: ModeType, submode: Optional[StandardSubMode], 
-                           focus_type: Optional[FocusType]) -> bool:
+                           focus_type: Optional[str]) -> bool:
         """Apply settings for the specified mode combination."""
         try:
             if mode == ModeType.KIDS:
@@ -375,7 +375,7 @@ class ModeController:
         # Apply any normal mode specific logic here
         return True
 
-    def _apply_focus_mode_settings(self, focus_type: FocusType) -> bool:
+    def _apply_focus_mode_settings(self, focus_type: str) -> bool:
         """Apply focus mode settings."""
         settings_key = f"standard_focus_{focus_type.name.lower()}"
         settings = self.settings_manager.get_mode_setting(settings_key)
@@ -486,7 +486,7 @@ class ModeController:
         """Switch to standard/normal mode."""
         return self.switch_to_mode(ModeType.STANDARD, StandardSubMode.NORMAL)
     
-    def switch_to_focus(self, focus_type: FocusType, custom_settings: Optional[Dict] = None) -> bool:
+    def switch_to_focus(self, focus_type: str, custom_settings: Optional[Dict] = None) -> bool:
         """Switch to focus mode with specified type."""
         return self.switch_to_mode(ModeType.STANDARD, StandardSubMode.FOCUS, focus_type, custom_settings)
     
@@ -494,7 +494,7 @@ class ModeController:
         """Switch to kids mode."""
         return self.switch_to_mode(ModeType.KIDS)
     
-    def change_focus_type(self, new_focus_type: FocusType) -> bool:
+    def change_focus_type(self, new_focus_type: str) -> bool:
         """Change focus type while staying in focus mode."""
         if self.current_submode != StandardSubMode.FOCUS:
             logging.error("Can only change focus type when in focus mode")
@@ -510,14 +510,14 @@ class ModeController:
         else:
             return self.switch_to_standard_normal()
 
-    def switch_submode(self, new_submode: StandardSubMode, focus_type: FocusType = FocusType.DEEP):
+    def switch_submode(self, new_submode: StandardSubMode, focus_type: str = "DEEP"):
         """Legacy method for submode switching."""
         if new_submode == StandardSubMode.FOCUS:
             return self.switch_to_focus(focus_type)
         else:
             return self.switch_to_standard_normal()
 
-    def start_focus_session(self, focus_type: FocusType, custom_settings: Optional[Dict] = None):
+    def start_focus_session(self, focus_type: str, custom_settings: Optional[Dict] = None):
         """Legacy method for starting focus sessions."""
         return self.switch_to_focus(focus_type, custom_settings)
 
@@ -529,7 +529,7 @@ class ModeController:
 
     # === UTILITY METHODS ===
     
-    def get_current_state(self) -> Tuple[ModeType, Optional[StandardSubMode], Optional[FocusType]]:
+    def get_current_state(self) -> Tuple[ModeType, Optional[StandardSubMode], Optional[str]]:
         """Get current mode state as tuple."""
         return (self.current_mode, self.current_submode, self.current_focus_type)
     
@@ -634,7 +634,7 @@ class ModeController:
         except Exception as e:
             logging.error(f"Error saving session data: {e}")
 
-    def _apply_custom_settings(self, focus_type: FocusType, custom_settings: Dict):
+    def _apply_custom_settings(self, focus_type: str, custom_settings: Dict):
         """Apply user-customized settings for focus session"""
         settings_key = f"standard_focus_{focus_type.name.lower()}"
         

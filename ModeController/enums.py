@@ -5,11 +5,11 @@ class StandardSubMode(Enum):
     NORMAL = auto()
     FOCUS = auto()
     
-class FocusType(Enum):
-    """Types of focus modes"""
-    DEEP = auto()
-    LIGHT = auto()
-    CUSTOM = auto() 
+# class FocusType(Enum):
+#     """Types of focus modes"""
+#     DEEP = auto()
+#     LIGHT = auto()
+#     CUSTOM = auto() 
     #option if saved gived new presets and can update
     # more presets saved by  the user 
     # WORK = auto()

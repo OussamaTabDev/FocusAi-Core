@@ -2,7 +2,7 @@
 # Core/database/database_manager.py
 from sqlalchemy import create_engine, and_, func, desc
 from sqlalchemy.orm import sessionmaker, Session
-from datetime import datetime, timedelta
+from datetime import date, datetime, timedelta
 from typing import Optional, List, Dict, Any, Tuple
 from collections import defaultdict
 import logging
@@ -356,6 +356,34 @@ class DatabaseManager:
                     average_session_duration=row.average_session_duration,
                     longest_session=row.longest_session,
                     last_used=row.last_used
+                )
+                for row in rows
+            }
+            
+    def get_statistics_for_day(self, day: date | datetime) -> Dict[str, AppStatistics]:
+        """
+        Return per-app usage for the given calendar day.
+        Accepts either a `date` or `datetime` instance.
+        """
+        target = day.date() if isinstance(day, datetime) else day
+
+        with self.get_session() as db_session:
+            rows = (
+                db_session.query(AppStatisticsDB)
+                .filter(func.date(AppStatisticsDB.day_use) == target)
+                .all()
+            )
+
+            return {
+                row.app_name: AppStatistics(
+                    app_name=row.app_name,
+                    total_time=row.total_time,
+                    session_count=row.session_count,
+                    contexts=row.contexts or {},
+                    statuses=row.statuses or {},
+                    average_session_duration=row.average_session_duration,
+                    longest_session=row.longest_session,
+                    last_used=row.last_used,
                 )
                 for row in rows
             }

@@ -1,6 +1,6 @@
 # Core/window_history.py (Modified version with database integration)
 from dataclasses import dataclass, field
-from datetime import datetime, timedelta
+from datetime import date, datetime, timedelta
 from typing import List, Dict, Optional, Tuple, Any
 from collections import defaultdict
 import threading
@@ -715,3 +715,5 @@ class WindowHistory:
     
     def get_today_statistics(self):
         return self.db_manager.get_today_statistics()
+    def get_statistics_for_day(self, day: date | datetime) -> Dict[str, AppStatistics]:
+        return self.db_manager.get_statistics_for_day(day)

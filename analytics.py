@@ -1,7 +1,7 @@
 from collections import defaultdict
 from typing import Dict, List, Optional, Tuple
-from datetime import datetime, timedelta
-from models import WindowInfo
+from datetime import date, datetime, timedelta
+from models import AppStatistics, WindowInfo
 import logging
 
 class SessionAnalytics:
@@ -321,3 +321,6 @@ class SessionAnalytics:
     
     def get_today_statistics(self):
         return self.window_history.get_today_statistics()
+    
+    def get_statistics_for_day(self, day: date | datetime) -> Dict[str, AppStatistics]:
+        return self.db_manager.get_statistics_for_day(day)
