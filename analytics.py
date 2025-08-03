@@ -69,11 +69,13 @@ class SessionAnalytics:
             records = self.window_history.raw_history
 
         for record in records:
+            # print(record)
             usage[record.window_id] += self.window_history.tracker.interval
             window_details[record.window_id] = {
                 "display_title": record.display_title,
                 "app": record.app,
-                "type": record.window_type
+                "type": record.window_type,
+                "status": record.status  
             }
 
         sorted_usage = sorted(usage.items(), key=lambda item: item[1], reverse=True)
@@ -96,6 +98,7 @@ class SessionAnalytics:
         app_details = {}
         
         for window in all_windows:
+            print(window)
             app_name = window["app"].lower()
             app_usage[app_name] += window["time_seconds"]
             
@@ -104,7 +107,8 @@ class SessionAnalytics:
                     "display_title": window["display_title"],
                     "app": window["app"],
                     "type": window["type"],
-                    "time_seconds": window["time_seconds"]
+                    "time_seconds": window["time_seconds"],
+                    "status": window["status"]  
                 }
             else:
                 # Update the display title to the most frequently used one
@@ -200,6 +204,40 @@ class SessionAnalytics:
             app_rankings.append((app_name, stats['productive'], productivity_ratio))
         
         # Sort by productive time (descending)
+        app_rankings.sort(key=lambda x: x[1], reverse=True)
+        
+        return app_rankings
+
+    def get_neutral_apps_ranking(self, hours: Optional[int] = None, specific_day: Optional[str] = str(datetime.today().date())) -> List[Tuple[str, float, float]]:
+        """
+        Get apps ranked by productivity.
+        Returns: [(app_name, productive_time, productivity_ratio), ...]
+        """
+        if specific_day:
+            start_of_day = datetime.strptime(specific_day, "%Y-%m-%d")
+            end_of_day = start_of_day + timedelta(days=1)
+            records = [r for r in self.window_history.raw_history 
+                       if start_of_day <= datetime.fromisoformat(r.timestamp) < end_of_day]
+        elif hours is not None:
+            cutoff = datetime.now() - timedelta(hours=hours)
+            records = [r for r in self.window_history.raw_history 
+                       if datetime.fromisoformat(r.timestamp) >= cutoff]
+        else:
+            records = self.window_history.raw_history
+
+        app_stats = defaultdict(lambda: {'Neutral': 0.0, 'total': 0.0})
+        
+        for record in records:
+            if record.status == 'Neutral':
+                app_stats[record.app]['Neutral'] += self.window_history.tracker.interval
+            app_stats[record.app]['total'] += self.window_history.tracker.interval
+
+        app_rankings = []
+        for app_name, stats in app_stats.items():
+            productivity_ratio = stats['Neutral'] / stats['total'] if stats['total'] > 0 else 0.0
+            app_rankings.append((app_name, stats['Neutral'], productivity_ratio))
+        
+        # Sort by Neutral time (descending)
         app_rankings.sort(key=lambda x: x[1], reverse=True)
         
         return app_rankings
